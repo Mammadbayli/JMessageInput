@@ -34,16 +34,16 @@
 		13AB4CAB1B4A7848A5AB6BD9609DECAD /* Pods-JMessageInput_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMessageInput_Example.release.xcconfig"; sourceTree = "<group>"; };
 		156EB67FB534CBDA6AA2753DB2FA4DF5 /* Pods-JMessageInput_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMessageInput_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		202CFBB120E428E33E0A4A81D774B313 /* JMessageInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInput.swift; path = JMessageInput/Classes/JMessageInput.swift; sourceTree = "<group>"; };
-		22751AD3195E8259B4629EFBA8CED335 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		22751AD3195E8259B4629EFBA8CED335 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		274A56E2275CE51FDC7E97997B664118 /* Pods-JMessageInput_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JMessageInput_Example"; path = Pods_JMessageInput_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A876784EF209FA32145D9A064F1EB05 /* JMessageInput-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMessageInput-prefix.pch"; sourceTree = "<group>"; };
 		33542816FCA035C19D1EC34651D61074 /* Pods-JMessageInput_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JMessageInput_Example.modulemap"; sourceTree = "<group>"; };
-		53517EEE2A4B625E8004F106DB14A61B /* JMessageInput.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JMessageInput.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		53517EEE2A4B625E8004F106DB14A61B /* JMessageInput.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JMessageInput.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		97D93A5F320C89EF68A4233136411DC8 /* JMessageInput.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JMessageInput.modulemap; sourceTree = "<group>"; };
 		9B0912145438CF36F9D07CEFE4B4E6AF /* JMessageInputTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputTextView.swift; path = JMessageInput/Classes/JMessageInputTextView.swift; sourceTree = "<group>"; };
 		9D3B116E1023FA9255CCB9E63CC4896D /* JMessageInput-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMessageInput-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E1446351DCE10A3A878622827FE6779 /* JMessageInput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMessageInput.release.xcconfig; sourceTree = "<group>"; };
 		AC8F6423270E3CF90CC3A5B33C281E44 /* Pods-JMessageInput_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMessageInput_Example-dummy.m"; sourceTree = "<group>"; };
 		B68AE9DBBDC9B8A2769338E425211B30 /* Pods-JMessageInput_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JMessageInput_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		DDA602ADAA5A6F62B9F31134699FD3E8 /* Pods-JMessageInput_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMessageInput_Example-Info.plist"; sourceTree = "<group>"; };
 		EC65B53893218AC6EC64696981F76315 /* Pods-JMessageInput_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JMessageInput_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F6B67F286189F558AD9289DE68DFDD33 /* JMessageInput */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JMessageInput; path = JMessageInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE3969064203F8762B7C1CFBF97BE021 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FE3969064203F8762B7C1CFBF97BE021 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -542,8 +542,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
