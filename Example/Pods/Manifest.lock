@@ -1,0 +1,16 @@
+PODS:
+  - JMessageInput (0.1.0)
+
+DEPENDENCIES:
+  - JMessageInput (from `../`)
+
+EXTERNAL SOURCES:
+  JMessageInput:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JMessageInput: ca45e193d7a592a476ce1f939b3737779efb392a
+
+PODFILE CHECKSUM: 17f0ca4d69b122798c28bf2d16ad8a175e3059d5
+
+COCOAPODS: 1.11.2
