@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09554665E38CCFE1A4B9114F6E7F6E9A /* UIView+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C007F9F3E5C6BCA087FCC5E711F4C139 /* UIView+Visibility.swift */; };
+		2F25319EBC85B5614FE447BC669EBE97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		53195F191C2DAE671F1178AA8BB15D4E /* JMessageInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0912145438CF36F9D07CEFE4B4E6AF /* JMessageInputTextView.swift */; };
+		6879ADCC18557AC4BF9CCF3B785FF615 /* JMessageInput-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF27EF85874E74AD4B86AEACC54EF28B /* JMessageInput-dummy.m */; };
+		99B0A059D8577ABB364DED1413267406 /* JMessageInput+UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A39550ABF863C6D5AAC2506B41EB17 /* JMessageInput+UITextViewDelegate.swift */; };
+		B18A0E2718EDD857F0C261ABF10596C6 /* JMessageInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202CFBB120E428E33E0A4A81D774B313 /* JMessageInput.swift */; };
+		B5BAA9451F266FB818681E9BDD9672D9 /* JMessageInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C901FF3402ED264E5A2CF20F82374160 /* JMessageInputState.swift */; };
+		C187F1180EC6124B7324267231DAACD5 /* JMessageInput-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3B116E1023FA9255CCB9E63CC4896D /* JMessageInput-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5A4240076455B7CE01C0F5B4D174DB1 /* Pods-JMessageInput_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8F6423270E3CF90CC3A5B33C281E44 /* Pods-JMessageInput_Example-dummy.m */; };
+		EE98454FBAFBC3FC16570C0B984B995B /* Pods-JMessageInput_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B68AE9DBBDC9B8A2769338E425211B30 /* Pods-JMessageInput_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F390AE27A4C1B8AB3C7B4365FA87F5E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D2FA7CF860EE8768F34E09C775A26AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6603DA9D25081132509411FA42F4743F;
+			remoteInfo = JMessageInput;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13AB4CAB1B4A7848A5AB6BD9609DECAD /* Pods-JMessageInput_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMessageInput_Example.release.xcconfig"; sourceTree = "<group>"; };
+		156EB67FB534CBDA6AA2753DB2FA4DF5 /* Pods-JMessageInput_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMessageInput_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		202CFBB120E428E33E0A4A81D774B313 /* JMessageInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInput.swift; path = JMessageInput/Classes/JMessageInput.swift; sourceTree = "<group>"; };
+		22751AD3195E8259B4629EFBA8CED335 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		274A56E2275CE51FDC7E97997B664118 /* Pods-JMessageInput_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JMessageInput_Example"; path = Pods_JMessageInput_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A876784EF209FA32145D9A064F1EB05 /* JMessageInput-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMessageInput-prefix.pch"; sourceTree = "<group>"; };
+		33542816FCA035C19D1EC34651D61074 /* Pods-JMessageInput_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JMessageInput_Example.modulemap"; sourceTree = "<group>"; };
+		53517EEE2A4B625E8004F106DB14A61B /* JMessageInput.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JMessageInput.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		97D93A5F320C89EF68A4233136411DC8 /* JMessageInput.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JMessageInput.modulemap; sourceTree = "<group>"; };
+		9B0912145438CF36F9D07CEFE4B4E6AF /* JMessageInputTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputTextView.swift; path = JMessageInput/Classes/JMessageInputTextView.swift; sourceTree = "<group>"; };
+		9D3B116E1023FA9255CCB9E63CC4896D /* JMessageInput-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMessageInput-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E1446351DCE10A3A878622827FE6779 /* JMessageInput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMessageInput.release.xcconfig; sourceTree = "<group>"; };
+		AC8F6423270E3CF90CC3A5B33C281E44 /* Pods-JMessageInput_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMessageInput_Example-dummy.m"; sourceTree = "<group>"; };
+		B68AE9DBBDC9B8A2769338E425211B30 /* Pods-JMessageInput_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JMessageInput_Example-umbrella.h"; sourceTree = "<group>"; };
+		BC5D2316F44B9CC8677CEE3AF5F47C1C /* JMessageInput-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JMessageInput-Info.plist"; sourceTree = "<group>"; };
+		C007F9F3E5C6BCA087FCC5E711F4C139 /* UIView+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Visibility.swift"; path = "JMessageInput/Classes/UIView+Visibility.swift"; sourceTree = "<group>"; };
+		C4A39550ABF863C6D5AAC2506B41EB17 /* JMessageInput+UITextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JMessageInput+UITextViewDelegate.swift"; path = "JMessageInput/Classes/JMessageInput+UITextViewDelegate.swift"; sourceTree = "<group>"; };
+		C67869BED1909717FA31091A5B17D5D7 /* Pods-JMessageInput_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMessageInput_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8D97229303B67F36487BBE9564E6C86 /* Pods-JMessageInput_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JMessageInput_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C901FF3402ED264E5A2CF20F82374160 /* JMessageInputState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputState.swift; path = JMessageInput/Classes/JMessageInputState.swift; sourceTree = "<group>"; };
+		CE5AC799236CFBA9FAC81A61D0AD37B2 /* JMessageInput.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMessageInput.debug.xcconfig; sourceTree = "<group>"; };
+		CF27EF85874E74AD4B86AEACC54EF28B /* JMessageInput-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JMessageInput-dummy.m"; sourceTree = "<group>"; };
+		DDA602ADAA5A6F62B9F31134699FD3E8 /* Pods-JMessageInput_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMessageInput_Example-Info.plist"; sourceTree = "<group>"; };
+		EC65B53893218AC6EC64696981F76315 /* Pods-JMessageInput_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JMessageInput_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6B67F286189F558AD9289DE68DFDD33 /* JMessageInput */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JMessageInput; path = JMessageInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3969064203F8762B7C1CFBF97BE021 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F21623C04FDEFBA9B767121C39C9C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F25319EBC85B5614FE447BC669EBE97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0C07CD9B1E74AA2D314A7AC0F5C0573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F390AE27A4C1B8AB3C7B4365FA87F5E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A0B4149608D0393130363351A7B154D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				924335B757D600793F5E188E132EBD3D /* Pods-JMessageInput_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		83DA002B4296CB55EFE5294553AAD3E9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D81FB034B7CEE5A74E8A04AD4E0A3D0A /* JMessageInput */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8A0DAC98DE9DCBC40CB642BF408A5B88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97D93A5F320C89EF68A4233136411DC8 /* JMessageInput.modulemap */,
+				CF27EF85874E74AD4B86AEACC54EF28B /* JMessageInput-dummy.m */,
+				BC5D2316F44B9CC8677CEE3AF5F47C1C /* JMessageInput-Info.plist */,
+				2A876784EF209FA32145D9A064F1EB05 /* JMessageInput-prefix.pch */,
+				9D3B116E1023FA9255CCB9E63CC4896D /* JMessageInput-umbrella.h */,
+				CE5AC799236CFBA9FAC81A61D0AD37B2 /* JMessageInput.debug.xcconfig */,
+				9E1446351DCE10A3A878622827FE6779 /* JMessageInput.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JMessageInput";
+			sourceTree = "<group>";
+		};
+		8C8F8CCDB587285764475F6D58384198 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6B67F286189F558AD9289DE68DFDD33 /* JMessageInput */,
+				274A56E2275CE51FDC7E97997B664118 /* Pods-JMessageInput_Example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		924335B757D600793F5E188E132EBD3D /* Pods-JMessageInput_Example */ = {
+			isa = PBXGroup;
+			children = (
+				33542816FCA035C19D1EC34651D61074 /* Pods-JMessageInput_Example.modulemap */,
+				EC65B53893218AC6EC64696981F76315 /* Pods-JMessageInput_Example-acknowledgements.markdown */,
+				C67869BED1909717FA31091A5B17D5D7 /* Pods-JMessageInput_Example-acknowledgements.plist */,
+				AC8F6423270E3CF90CC3A5B33C281E44 /* Pods-JMessageInput_Example-dummy.m */,
+				C8D97229303B67F36487BBE9564E6C86 /* Pods-JMessageInput_Example-frameworks.sh */,
+				DDA602ADAA5A6F62B9F31134699FD3E8 /* Pods-JMessageInput_Example-Info.plist */,
+				B68AE9DBBDC9B8A2769338E425211B30 /* Pods-JMessageInput_Example-umbrella.h */,
+				156EB67FB534CBDA6AA2753DB2FA4DF5 /* Pods-JMessageInput_Example.debug.xcconfig */,
+				13AB4CAB1B4A7848A5AB6BD9609DECAD /* Pods-JMessageInput_Example.release.xcconfig */,
+			);
+			name = "Pods-JMessageInput_Example";
+			path = "Target Support Files/Pods-JMessageInput_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				83DA002B4296CB55EFE5294553AAD3E9 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				8C8F8CCDB587285764475F6D58384198 /* Products */,
+				3A0B4149608D0393130363351A7B154D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D81FB034B7CEE5A74E8A04AD4E0A3D0A /* JMessageInput */ = {
+			isa = PBXGroup;
+			children = (
+				202CFBB120E428E33E0A4A81D774B313 /* JMessageInput.swift */,
+				C4A39550ABF863C6D5AAC2506B41EB17 /* JMessageInput+UITextViewDelegate.swift */,
+				C901FF3402ED264E5A2CF20F82374160 /* JMessageInputState.swift */,
+				9B0912145438CF36F9D07CEFE4B4E6AF /* JMessageInputTextView.swift */,
+				C007F9F3E5C6BCA087FCC5E711F4C139 /* UIView+Visibility.swift */,
+				E4587FC3B3B7118129059A091654C074 /* Pod */,
+				8A0DAC98DE9DCBC40CB642BF408A5B88 /* Support Files */,
+			);
+			name = JMessageInput;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E4587FC3B3B7118129059A091654C074 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				53517EEE2A4B625E8004F106DB14A61B /* JMessageInput.podspec */,
+				FE3969064203F8762B7C1CFBF97BE021 /* LICENSE */,
+				22751AD3195E8259B4629EFBA8CED335 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1ABC32FABED35A38F282B7ABB6B85788 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE98454FBAFBC3FC16570C0B984B995B /* Pods-JMessageInput_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737CE006B12E3D90F7A5BB0EB51735B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C187F1180EC6124B7324267231DAACD5 /* JMessageInput-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6603DA9D25081132509411FA42F4743F /* JMessageInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853463EF94848042BF97A7FBF3CE2CD7 /* Build configuration list for PBXNativeTarget "JMessageInput" */;
+			buildPhases = (
+				737CE006B12E3D90F7A5BB0EB51735B9 /* Headers */,
+				BA03CD9978BB2CC42E8A8426E2E5218C /* Sources */,
+				F0C07CD9B1E74AA2D314A7AC0F5C0573 /* Frameworks */,
+				BD3F5D11CBF92D9CC3225BFEF14734C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMessageInput;
+			productName = JMessageInput;
+			productReference = F6B67F286189F558AD9289DE68DFDD33 /* JMessageInput */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8FC0723F4E890EA6AC1AAF58BC2634E /* Pods-JMessageInput_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E104E1328B302A53EA565C9C9B859D7C /* Build configuration list for PBXNativeTarget "Pods-JMessageInput_Example" */;
+			buildPhases = (
+				1ABC32FABED35A38F282B7ABB6B85788 /* Headers */,
+				55202C188937379E0BEAC482CCDA77A8 /* Sources */,
+				3F21623C04FDEFBA9B767121C39C9C2A /* Frameworks */,
+				2B94D6C792142D7747C9A7D0ABE89F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EA9FE881460BBBB99026405304171D8 /* PBXTargetDependency */,
+			);
+			name = "Pods-JMessageInput_Example";
+			productName = Pods_JMessageInput_Example;
+			productReference = 274A56E2275CE51FDC7E97997B664118 /* Pods-JMessageInput_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8C8F8CCDB587285764475F6D58384198 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6603DA9D25081132509411FA42F4743F /* JMessageInput */,
+				B8FC0723F4E890EA6AC1AAF58BC2634E /* Pods-JMessageInput_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B94D6C792142D7747C9A7D0ABE89F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD3F5D11CBF92D9CC3225BFEF14734C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55202C188937379E0BEAC482CCDA77A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A4240076455B7CE01C0F5B4D174DB1 /* Pods-JMessageInput_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA03CD9978BB2CC42E8A8426E2E5218C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18A0E2718EDD857F0C261ABF10596C6 /* JMessageInput.swift in Sources */,
+				99B0A059D8577ABB364DED1413267406 /* JMessageInput+UITextViewDelegate.swift in Sources */,
+				6879ADCC18557AC4BF9CCF3B785FF615 /* JMessageInput-dummy.m in Sources */,
+				B5BAA9451F266FB818681E9BDD9672D9 /* JMessageInputState.swift in Sources */,
+				53195F191C2DAE671F1178AA8BB15D4E /* JMessageInputTextView.swift in Sources */,
+				09554665E38CCFE1A4B9114F6E7F6E9A /* UIView+Visibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EA9FE881460BBBB99026405304171D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JMessageInput;
+			target = 6603DA9D25081132509411FA42F4743F /* JMessageInput */;
+			targetProxy = 0D2FA7CF860EE8768F34E09C775A26AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09E45207C498E59D63B6F86D9394B4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5AC799236CFBA9FAC81A61D0AD37B2 /* JMessageInput.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JMessageInput/JMessageInput-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMessageInput/JMessageInput-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JMessageInput/JMessageInput.modulemap";
+				PRODUCT_MODULE_NAME = JMessageInput;
+				PRODUCT_NAME = JMessageInput;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		29F5C1612E83C045BDDF6580189DFD01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1446351DCE10A3A878622827FE6779 /* JMessageInput.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JMessageInput/JMessageInput-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMessageInput/JMessageInput-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JMessageInput/JMessageInput.modulemap";
+				PRODUCT_MODULE_NAME = JMessageInput;
+				PRODUCT_NAME = JMessageInput;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B27E27D9B59E81F46FD557C2B8337B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156EB67FB534CBDA6AA2753DB2FA4DF5 /* Pods-JMessageInput_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JMessageInput_Example/Pods-JMessageInput_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JMessageInput_Example/Pods-JMessageInput_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CE6860E41181F2844515245372BF1CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13AB4CAB1B4A7848A5AB6BD9609DECAD /* Pods-JMessageInput_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JMessageInput_Example/Pods-JMessageInput_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JMessageInput_Example/Pods-JMessageInput_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853463EF94848042BF97A7FBF3CE2CD7 /* Build configuration list for PBXNativeTarget "JMessageInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E45207C498E59D63B6F86D9394B4B7 /* Debug */,
+				29F5C1612E83C045BDDF6580189DFD01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E104E1328B302A53EA565C9C9B859D7C /* Build configuration list for PBXNativeTarget "Pods-JMessageInput_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B27E27D9B59E81F46FD557C2B8337B9B /* Debug */,
+				CE6860E41181F2844515245372BF1CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
