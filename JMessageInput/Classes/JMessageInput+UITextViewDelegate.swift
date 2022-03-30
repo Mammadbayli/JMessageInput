@@ -11,6 +11,9 @@ extension JMessageInput: UITextViewDelegate {
             textView.endEditing(true)
             textView.text = nil
             state = .initial
+            
+            resizeTextViewToFitText(textView: textView)
+
         }
         
         return true
