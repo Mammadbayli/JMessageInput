@@ -1,4 +1,11 @@
 public final class JMessageInput: UIView {
+    
+    var isPlusButtonPressed = false
+    var isMicButtonPressed = false
+    var isCameraButtonPressed = false
+    
+    weak var delegate: JMessageInputDelegate?
+    
     let maxTextHeight:CGFloat = 100
     let minTextHeight:CGFloat = 35
     
@@ -7,75 +14,13 @@ public final class JMessageInput: UIView {
     var temporaryConstraints = [NSLayoutConstraint]()
     var textViewHeightConstraint: NSLayoutConstraint?
     var initialTouchLocation: CGPoint?
-//    var textField
     
-    func processState() {
-        switch(state) {
-        case .dirty:
-            UIView.animate(withDuration: 0.3, delay: 0, options: [.transitionFlipFromBottom], animations: {
-                self.layoutForDirtyState()
-                self.stackView.layoutIfNeeded()
-                self.slideToCancelLabel.stopShimmering()
-            }, completion: nil)
-        case .recordingAudio:
-            UIView.animate(withDuration: 0.3, delay: 0, options: [.transitionFlipFromBottom], animations: {
-                self.layoutForRecordingAudioState()
-                self.stackView.layoutIfNeeded()
-                self.slideToCancelLabel.startShimmering()
-            }, completion: nil)
-        default:
-            UIView.animate(withDuration: 0.3, delay: 0, options: [.transitionFlipFromBottom], animations: {
-                self.layoutForInitialState()
-                self.stackView.layoutIfNeeded()
-                self.slideToCancelLabel.stopShimmering()
-            }, completion: nil)
-        }
-    }
-    
-    func layoutForDirtyState() {
-        recordingIndicatorImageView.hide()
-        recordingDurationLabel.hide()
-        slideToCancelLabel.hide()
-        leftButton.show()
-        textField.show()
-        micButton.hide()
-        cameraButton.hide()
-        sendButton.show()
-        
-        stopAnimatingRedMic()
-    }
-    
-    func layoutForInitialState() {
-        recordingIndicatorImageView.hide()
-        recordingDurationLabel.hide()
-        slideToCancelLabel.hide()
-        leftButton.show()
-        textField.show()
-        micButton.show()
-        cameraButton.show()
-        sendButton.hide()
-        
-        stopAnimatingRedMic()
-    }
-    
-    func layoutForRecordingAudioState() {
-        recordingIndicatorImageView.show()
-        recordingDurationLabel.show()
-        slideToCancelLabel.show()
-        leftButton.hide()
-        textField.hide()
-        micButton.show()
-        cameraButton.hide()
-        sendButton.hide()
-        
-        animateRedMic()
-    }
-    
+    var shouldAnimateRedMic = false
     
     func setup() {
         addSubview(stackView)
         
-        stackView.addArrangedSubview(leftButton)
+        stackView.addArrangedSubview(plusButton)
         stackView.addArrangedSubview(textField)
         stackView.addArrangedSubview(recordingIndicatorImageView)
         stackView.addArrangedSubview(recordingDurationLabel)
@@ -99,7 +44,7 @@ public final class JMessageInput: UIView {
             textViewHeightConstraint!,
             recordingIndicatorImageView.heightAnchor.constraint(equalToConstant: minTextHeight),
             recordingDurationLabel.heightAnchor.constraint(equalToConstant: minTextHeight),
-            leftButton.heightAnchor.constraint(equalToConstant: minTextHeight),
+            plusButton.heightAnchor.constraint(equalToConstant: minTextHeight),
             cameraButton.heightAnchor.constraint(equalToConstant:minTextHeight),
             micButton.heightAnchor.constraint(equalToConstant: minTextHeight),
             sendButton.heightAnchor.constraint(equalToConstant: minTextHeight),
@@ -109,26 +54,15 @@ public final class JMessageInput: UIView {
         NSLayoutConstraint.activate([
             recordingIndicatorImageView.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.1),
             recordingDurationLabel.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.25),
-            leftButton.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.1),
+            plusButton.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.1),
             cameraButton.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.1),
             micButton.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.1),
             sendButton.widthAnchor.constraint(equalTo: stackView.widthAnchor, multiplier: 0.1)
         ])
         
         layoutForInitialState()
+    }
 
-    }
-    
-    @objc func micButtonPressed() {
-        state = .recordingAudio
-    }
-    
-    @objc func micButtonReleased() {
-        state = .initial
-    }
-    
-    
-    var shouldAnimateRedMic = false
     
     func animateRedMic() {
         shouldAnimateRedMic = true
@@ -151,9 +85,14 @@ public final class JMessageInput: UIView {
             if (oldValue != state) {
                 processState()
             }
+            
+            self.delegate?.stateDidChange(input: self, oldState: oldValue)
+        }
+        
+        willSet {
+            self.delegate?.stateWillChange(input: self, newState: newValue)
         }
     }
-    
     
     lazy var slideToCancelLabel: UILabel = {
         let label = UILabel()
@@ -211,11 +150,15 @@ public final class JMessageInput: UIView {
         } else {
             // Fallback on earlier versions
         }
+        
+        button.addTarget(self, action: #selector(sendButtonPressed), for: .touchDown)
+        button.addTarget(self, action: #selector(sendButtonReleased), for: .touchCancel)
+        button.addTarget(self, action: #selector(sendButtonReleased), for: .touchUpInside)
 
         return button
     }()
     
-    lazy var leftButton: UIButton = {
+    lazy var plusButton: UIButton = {
         let button = UIButton()
         
 //                    button.contentHorizontalAlignment = .left
@@ -227,7 +170,8 @@ public final class JMessageInput: UIView {
             // Fallback on earlier versions
         }
         
-//        button.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        button.isUserInteractionEnabled = false
+        
         return button
     }()
     
@@ -242,10 +186,6 @@ public final class JMessageInput: UIView {
         
         button.isUserInteractionEnabled = false
         
-//        button.addTarget(self, action: #selector(micButtonPressed), for: .touchDown)
-//        button.addTarget(self, action: #selector(micButtonReleased), for: .touchUpInside)
-//        button.addTarget(self, action: #selector(micButtonReleased), for: .touchDragExit)
-        
         return button
     }()
     
@@ -258,6 +198,9 @@ public final class JMessageInput: UIView {
         } else {
             // Fallback on earlier versions
         }
+        
+        button.isUserInteractionEnabled = false
+        
         return button
     }()
     
