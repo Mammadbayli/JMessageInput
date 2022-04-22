@@ -13,9 +13,9 @@ class JMessageInputTextView: UITextView {
         textContainer.heightTracksTextView = true
         isScrollEnabled = false
         font = .systemFont(ofSize: 14)
-        layer.cornerRadius = 14
+        layer.cornerRadius = 18
         clipsToBounds = true
-        layer.borderWidth = 1
+        layer.borderWidth = 0.5
         layer.borderColor = UIColor.lightGray.cgColor
     }
     

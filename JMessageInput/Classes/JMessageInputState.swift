@@ -8,5 +8,5 @@
 enum JMessageInputState {
     case initial
     case dirty
-    case recording
+    case recordingAudio
 }

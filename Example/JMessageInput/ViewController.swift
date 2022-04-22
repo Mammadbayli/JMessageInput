@@ -35,12 +35,6 @@ class ViewController: UIViewController {
         }
         
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(self.keyboardWillChangeFrame(notification:)),
-                                               name: NSNotification.Name.UIKeyboardWillChangeFrame,
-                                               object: nil)
-        
-        
-        NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.keyboardWillHide(notification:)),
                                                name: NSNotification.Name.UIKeyboardWillHide,
                                                object: nil)
@@ -50,6 +44,9 @@ class ViewController: UIViewController {
                                                selector: #selector(self.keyboardWillShow(notification:)),
                                                name: NSNotification.Name.UIKeyboardWillShow,
                                                object: nil)
+        
+        self.navigationController?.interactivePopGestureRecognizer?.delaysTouchesBegan = false
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,16 +54,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func keyboardWillChangeFrame(notification: Notification) {
-        let endFrame = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        
-        if #available(iOS 11.0, *) {
-//            self.additionalSafeAreaInsets = UIEdgeInsets(top: 0, left: 0, bottom: endFrame.height, right: 0)
-        } else {
-            // Fallback on earlier versions
-        }
-        
+//
+    override func preferredScreenEdgesDeferringSystemGestures() -> UIRectEdge {
+        return [.left, .bottom, .right]
     }
+    
     @objc func keyboardWillShow(notification: Notification) {
         let endFrame = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
