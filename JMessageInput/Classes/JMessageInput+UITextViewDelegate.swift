@@ -6,27 +6,28 @@
 //
 
 extension JMessageInput: UITextViewDelegate {
-    public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if (text == "\n") {
-            textView.endEditing(true)
-            textView.text = nil
-            state = .initial
-            
-            resizeTextViewToFitText(textView: textView)
-
-        }
-        
-        return true
-    }
+//    public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+//        if (text == "\n") {
+//            textView.endEditing(true)
+//            textView.text = nil
+////            state = .initial
+//            
+//            resizeTextViewToFitText(textView: textView)
+//        }
+//        
+//        return true
+//    }
     
     public func textViewDidChange(_ textView: UITextView) {
-        if let text = textView.text, text.count > 0 {
-            state = .dirty
-        } else {
-            state = .initial
-        }
+//        if let text = textView.text, text.count > 0 {
+//            state = .dirty
+//        } else {
+//            state = .initial
+//        }
         
         resizeTextViewToFitText(textView: textView)
+        
+        self.delegate?.inputDidChange(input: self, text: textView.text)
     }
     
     func resizeTextViewToFitText(textView: UITextView) {
@@ -36,7 +37,8 @@ extension JMessageInput: UITextViewDelegate {
         
         UIView.animate(withDuration: animationDuration) {
             textView.isScrollEnabled = expectedSize.height > self.maxTextHeight
-//            self.layoutIfNeeded()
         }
+        
+        self.delegate?.inputDidChangeFrame(input: self)
     }
 }
