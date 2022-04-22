@@ -205,7 +205,7 @@ public final class JMessageInput: UIView {
     }()
     
     convenience init() {
-        let frame = CGRect(origin: .zero, size: .init(width: 200, height: 40))
+//        let frame = CGRect(origin: .zero, size: .init(width: 200, height: 40))
         self.init(frame: .zero)
     }
     
