@@ -1,4 +1,4 @@
-public final class JMessageInput: UIView {
+@objc public final class JMessageInput: UIView {
     
     var isPlusButtonPressed = false
     var isMicButtonPressed = false
