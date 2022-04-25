@@ -8,16 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1C84AFFA53A23865B5685126 /* Pods_JMessageInput_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12E48E4C76730C9EB02A04B /* Pods_JMessageInput_Example.framework */; };
+		45E53597B83D0003E650B594 /* Pods_JMessageInput_Example_Objc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AA2013DE5D868CBEFF0B9C /* Pods_JMessageInput_Example_Objc.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		6D3ED5272816C24100E2479B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3ED5262816C24100E2479B /* AppDelegate.m */; };
+		6D3ED52A2816C24100E2479B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3ED5292816C24100E2479B /* SceneDelegate.m */; };
+		6D3ED52D2816C24100E2479B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3ED52C2816C24100E2479B /* ViewController.m */; };
+		6D3ED5302816C24100E2479B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D3ED52E2816C24100E2479B /* Main.storyboard */; };
+		6D3ED5322816C24400E2479B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3ED5312816C24400E2479B /* Assets.xcassets */; };
+		6D3ED5352816C24400E2479B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D3ED5332816C24400E2479B /* LaunchScreen.storyboard */; };
+		6D3ED5382816C24400E2479B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3ED5372816C24400E2479B /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12898A1E7E6873877E4F4152 /* JMessageInput.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JMessageInput.podspec; path = ../JMessageInput.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3E2CDB08782A114A9DFF75BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		44AA2013DE5D868CBEFF0B9C /* Pods_JMessageInput_Example_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMessageInput_Example_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48D4E358C02E58B622B66313 /* Pods-JMessageInput_Example_Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMessageInput_Example_Objc.debug.xcconfig"; path = "Target Support Files/Pods-JMessageInput_Example_Objc/Pods-JMessageInput_Example_Objc.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JMessageInput_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMessageInput_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +37,20 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6D3ED5232816C24100E2479B /* JMessageInput_Example_Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMessageInput_Example_Objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3ED5252816C24100E2479B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D3ED5262816C24100E2479B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D3ED5282816C24100E2479B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		6D3ED5292816C24100E2479B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		6D3ED52B2816C24100E2479B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6D3ED52C2816C24100E2479B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D3ED52F2816C24100E2479B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D3ED5312816C24400E2479B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D3ED5342816C24400E2479B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D3ED5362816C24400E2479B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D3ED5372816C24400E2479B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84353DE588653C36AAE41FA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BB5361077B64C2CCEC41046A /* Pods-JMessageInput_Example_Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMessageInput_Example_Objc.release.xcconfig"; path = "Target Support Files/Pods-JMessageInput_Example_Objc/Pods-JMessageInput_Example_Objc.release.xcconfig"; sourceTree = "<group>"; };
 		CFBEFA121D5BA5BC1B966A48 /* Pods-JMessageInput_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMessageInput_Example.debug.xcconfig"; path = "Target Support Files/Pods-JMessageInput_Example/Pods-JMessageInput_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E12E48E4C76730C9EB02A04B /* Pods_JMessageInput_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMessageInput_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC1270BFBA852759DA4E8DA /* Pods-JMessageInput_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMessageInput_Example.release.xcconfig"; path = "Target Support Files/Pods-JMessageInput_Example/Pods-JMessageInput_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D3ED5202816C24100E2479B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E53597B83D0003E650B594 /* Pods_JMessageInput_Example_Objc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E12E48E4C76730C9EB02A04B /* Pods_JMessageInput_Example.framework */,
+				44AA2013DE5D868CBEFF0B9C /* Pods_JMessageInput_Example_Objc.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -58,6 +90,8 @@
 			children = (
 				CFBEFA121D5BA5BC1B966A48 /* Pods-JMessageInput_Example.debug.xcconfig */,
 				ECC1270BFBA852759DA4E8DA /* Pods-JMessageInput_Example.release.xcconfig */,
+				48D4E358C02E58B622B66313 /* Pods-JMessageInput_Example_Objc.debug.xcconfig */,
+				BB5361077B64C2CCEC41046A /* Pods-JMessageInput_Example_Objc.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -68,6 +102,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for JMessageInput */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				6D3ED5242816C24100E2479B /* JMessageInput_Example_Objc */,
 				607FACD11AFB9204008FA782 /* Products */,
 				4201839AABE1562AE0B10332 /* Pods */,
 				09775874F0BDFA1219ADCE81 /* Frameworks */,
@@ -78,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* JMessageInput_Example.app */,
+				6D3ED5232816C24100E2479B /* JMessageInput_Example_Objc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +167,24 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		6D3ED5242816C24100E2479B /* JMessageInput_Example_Objc */ = {
+			isa = PBXGroup;
+			children = (
+				6D3ED5252816C24100E2479B /* AppDelegate.h */,
+				6D3ED5262816C24100E2479B /* AppDelegate.m */,
+				6D3ED5282816C24100E2479B /* SceneDelegate.h */,
+				6D3ED5292816C24100E2479B /* SceneDelegate.m */,
+				6D3ED52B2816C24100E2479B /* ViewController.h */,
+				6D3ED52C2816C24100E2479B /* ViewController.m */,
+				6D3ED52E2816C24100E2479B /* Main.storyboard */,
+				6D3ED5312816C24400E2479B /* Assets.xcassets */,
+				6D3ED5332816C24400E2479B /* LaunchScreen.storyboard */,
+				6D3ED5362816C24400E2479B /* Info.plist */,
+				6D3ED5372816C24400E2479B /* main.m */,
+			);
+			path = JMessageInput_Example_Objc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +207,25 @@
 			productReference = 607FACD01AFB9204008FA782 /* JMessageInput_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6D3ED5222816C24100E2479B /* JMessageInput_Example_Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3ED5392816C24400E2479B /* Build configuration list for PBXNativeTarget "JMessageInput_Example_Objc" */;
+			buildPhases = (
+				49EA54B1E0C1F06E887DF67E /* [CP] Check Pods Manifest.lock */,
+				6D3ED51F2816C24100E2479B /* Sources */,
+				6D3ED5202816C24100E2479B /* Frameworks */,
+				6D3ED5212816C24100E2479B /* Resources */,
+				3A8CB86E395A76B8E7C99A80 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMessageInput_Example_Objc;
+			productName = JMessageInput_Example_Objc;
+			productReference = 6D3ED5232816C24100E2479B /* JMessageInput_Example_Objc.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +240,10 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = HF45SX3EL4;
 						LastSwiftMigration = 1320;
+						ProvisioningStyle = Automatic;
+					};
+					6D3ED5222816C24100E2479B = {
+						CreatedOnToolsVersion = 13.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -186,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* JMessageInput_Example */,
+				6D3ED5222816C24100E2479B /* JMessageInput_Example_Objc */,
 			);
 		};
 /* End PBXProject section */
@@ -201,9 +279,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D3ED5212816C24100E2479B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3ED5352816C24400E2479B /* LaunchScreen.storyboard in Resources */,
+				6D3ED5322816C24400E2479B /* Assets.xcassets in Resources */,
+				6D3ED5302816C24100E2479B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A8CB86E395A76B8E7C99A80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JMessageInput_Example_Objc/Pods-JMessageInput_Example_Objc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JMessageInput/JMessageInput.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JMessageInput.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JMessageInput_Example_Objc/Pods-JMessageInput_Example_Objc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49EA54B1E0C1F06E887DF67E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JMessageInput_Example_Objc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B63687E00F8D0CDE03D72A18 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +384,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D3ED51F2816C24100E2479B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3ED52D2816C24100E2479B /* ViewController.m in Sources */,
+				6D3ED5272816C24100E2479B /* AppDelegate.m in Sources */,
+				6D3ED5382816C24400E2479B /* main.m in Sources */,
+				6D3ED52A2816C24100E2479B /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -273,6 +412,22 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6D3ED52E2816C24100E2479B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D3ED52F2816C24100E2479B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D3ED5332816C24400E2479B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D3ED5342816C24400E2479B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -396,11 +551,12 @@
 				INFOPLIST_FILE = JMessageInput/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "mammadbayli.JMessageInput-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -415,11 +571,80 @@
 				INFOPLIST_FILE = JMessageInput/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "mammadbayli.JMessageInput-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6D3ED53A2816C24400E2479B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D4E358C02E58B622B66313 /* Pods-JMessageInput_Example_Objc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JMessageInput_Example_Objc/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "mammadbayli.JMessageInput-Example-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D3ED53B2816C24400E2479B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5361077B64C2CCEC41046A /* Pods-JMessageInput_Example_Objc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JMessageInput_Example_Objc/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "mammadbayli.JMessageInput-Example-Objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -440,6 +665,15 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3ED5392816C24400E2479B /* Build configuration list for PBXNativeTarget "JMessageInput_Example_Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3ED53A2816C24400E2479B /* Debug */,
+				6D3ED53B2816C24400E2479B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

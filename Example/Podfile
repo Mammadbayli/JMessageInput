@@ -5,3 +5,8 @@ platform :ios, '9.0'
 target 'JMessageInput_Example' do
   pod 'JMessageInput', :path => '../'
 end
+
+target 'JMessageInput_Example_Objc' do
+  pod 'JMessageInput', :path => '../'
+end
+

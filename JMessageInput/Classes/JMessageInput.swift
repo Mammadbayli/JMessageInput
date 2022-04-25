@@ -204,7 +204,7 @@
         return button
     }()
     
-    convenience init() {
+    @objc public convenience init() {
 //        let frame = CGRect(origin: .zero, size: .init(width: 200, height: 40))
         self.init(frame: .zero)
     }
