@@ -30,7 +30,7 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         let location = touch.location(in: self)
         let distance = initialTouchLocation!.x - location.x
         if (abs(distance) > 150 && isMicButtonPressed) {
-            micButtonReleased()
+            micButtonReleased(canceled: true)
         }
         
         slideToCancelLabel.transform = CGAffineTransform(translationX: -distance/5 + 1, y: 0)
@@ -42,7 +42,7 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         guard let touchLocation = touches.first?.location(in: self) else { return }
         
         if !micButton.frame.contains(touchLocation) && isMicButtonPressed {
-            micButtonReleased()
+            micButtonReleased(canceled: false)
         } else if !plusButton.frame.contains(touchLocation) && isPlusButtonPressed {
             plusButtonReleased()
         } else if !cameraButton.frame.contains(touchLocation) && isCameraButtonPressed {
@@ -56,7 +56,7 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         super.touchesCancelled(touches, with: event)
         
         if isMicButtonPressed {
-            micButtonReleased()
+            micButtonReleased(canceled: true)
         } else if isPlusButtonPressed {
             plusButtonReleased()
         } else if isCameraButtonPressed {
@@ -76,13 +76,13 @@ extension JMessageInput: UIGestureRecognizerDelegate {
 
     }
     
-     func micButtonReleased() {
+    func micButtonReleased(canceled: Bool) {
         isMicButtonPressed = false
         
         state = .initial
         
          if self.delegate?.micButtonPressed != nil {
-             self.delegate?.micButtonReleased!(input: self)
+             self.delegate?.micButtonReleased!(input: self, canceled: canceled)
          }
     
     }
