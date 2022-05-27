@@ -26,19 +26,28 @@ extension JMessageInput: UITextViewDelegate {
 //        }
         
         resizeTextViewToFitText(textView: textView)
-        
-        self.delegate?.textDidChange(input: self, text: textView.text)
+        if self.delegate?.textDidChange != nil {
+            self.delegate?.textDidChange!(input: self, text: textView.text)
+        }
+
     }
     
     func resizeTextViewToFitText(textView: UITextView) {
         let size = CGSize(width: textView.frame.width, height: .infinity)
         let expectedSize = textView.sizeThatFits(size)
-        self.textViewHeightConstraint?.constant = max(min(expectedSize.height, self.maxTextHeight), self.minTextHeight)
+        let newHeight = max(min(expectedSize.height, self.maxTextHeight), self.minTextHeight)
         
-        UIView.animate(withDuration: animationDuration) {
-            textView.isScrollEnabled = expectedSize.height > self.maxTextHeight
+        if Double(self.textViewHeightConstraint?.constant ?? 0) != newHeight {
+            self.textViewHeightConstraint?.constant = newHeight
+            
+            UIView.animate(withDuration: animationDuration) {
+                textView.isScrollEnabled = expectedSize.height > self.maxTextHeight
+            }
+            
+            if self.delegate?.inputDidChangeFrame != nil {
+                self.delegate?.inputDidChangeFrame!(input: self)
+            }
         }
         
-        self.delegate?.inputDidChangeFrame(input: self)
     }
 }

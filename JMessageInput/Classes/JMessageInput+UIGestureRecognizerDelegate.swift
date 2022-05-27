@@ -70,8 +70,10 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         isMicButtonPressed = true
         
         state = .recordingAudio
-        
-        self.delegate?.micButtonPressed(input: self)
+        if self.delegate?.micButtonPressed != nil {
+            self.delegate?.micButtonPressed!(input: self)
+        }
+
     }
     
      func micButtonReleased() {
@@ -79,23 +81,30 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         
         state = .initial
         
-        self.delegate?.micButtonReleased(input: self)
+         if self.delegate?.micButtonPressed != nil {
+             self.delegate?.micButtonReleased!(input: self)
+         }
+    
     }
 
      func plusButtonPressed() {
         isPlusButtonPressed = true
         
 //        state = .initial
-        
-        self.delegate?.plusButtonPressed(input: self)
+         if self.delegate?.plusButtonPressed != nil {
+             self.delegate?.plusButtonPressed!(input: self)
+         }
+
     }
     
      func plusButtonReleased() {
         isPlusButtonPressed = false
         
 //        state = .initial
-        
-        self.delegate?.plusButtonReleased(input: self)
+         if self.delegate?.plusButtonReleased != nil {
+             self.delegate?.plusButtonReleased!(input: self)
+         }
+
    }
     
     
@@ -104,7 +113,10 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         
 //        state = .initial
         
-        self.delegate?.cameraButtonPressed(input: self)
+         if self.delegate?.cameraButtonPressed != nil {
+             self.delegate?.cameraButtonPressed!(input: self)
+         }
+
     }
     
      func cameraButtonReleased() {
@@ -112,15 +124,23 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         
 //        state = .initial
         
-        self.delegate?.cameraButtonReleased(input: self)
+         if self.delegate?.cameraButtonReleased != nil {
+             self.delegate?.cameraButtonReleased!(input: self)
+         }
+
     }
     
     @objc func sendButtonPressed() {
-        self.delegate?.sendButtonPressed(input: self)
+        if self.delegate?.sendButtonPressed != nil {
+            self.delegate?.sendButtonPressed!(input: self)
+        }
+
     }
     
     @objc func sendButtonReleased() {
-        self.delegate?.sendButtonReleased(input: self)
+        if self.delegate?.sendButtonReleased != nil {
+            self.delegate?.sendButtonReleased!(input: self)
+        }
     }
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive event: UIEvent) -> Bool {

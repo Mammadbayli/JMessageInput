@@ -21,6 +21,7 @@
 		6D3ED5322816C24400E2479B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3ED5312816C24400E2479B /* Assets.xcassets */; };
 		6D3ED5352816C24400E2479B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D3ED5332816C24400E2479B /* LaunchScreen.storyboard */; };
 		6D3ED5382816C24400E2479B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3ED5372816C24400E2479B /* main.m */; };
+		6D50633D2840C83400492186 /* ViewController+JMessageInputDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D50633C2840C83400492186 /* ViewController+JMessageInputDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		6D3ED5342816C24400E2479B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D3ED5362816C24400E2479B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D3ED5372816C24400E2479B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D50633B2840C83400492186 /* ViewController+JMessageInputDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+JMessageInputDelegate.h"; sourceTree = "<group>"; };
+		6D50633C2840C83400492186 /* ViewController+JMessageInputDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+JMessageInputDelegate.m"; sourceTree = "<group>"; };
 		84353DE588653C36AAE41FA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BB5361077B64C2CCEC41046A /* Pods-JMessageInput_Example_Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMessageInput_Example_Objc.release.xcconfig"; path = "Target Support Files/Pods-JMessageInput_Example_Objc/Pods-JMessageInput_Example_Objc.release.xcconfig"; sourceTree = "<group>"; };
 		CFBEFA121D5BA5BC1B966A48 /* Pods-JMessageInput_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMessageInput_Example.debug.xcconfig"; path = "Target Support Files/Pods-JMessageInput_Example/Pods-JMessageInput_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 				6D3ED5292816C24100E2479B /* SceneDelegate.m */,
 				6D3ED52B2816C24100E2479B /* ViewController.h */,
 				6D3ED52C2816C24100E2479B /* ViewController.m */,
+				6D50633B2840C83400492186 /* ViewController+JMessageInputDelegate.h */,
+				6D50633C2840C83400492186 /* ViewController+JMessageInputDelegate.m */,
 				6D3ED52E2816C24100E2479B /* Main.storyboard */,
 				6D3ED5312816C24400E2479B /* Assets.xcassets */,
 				6D3ED5332816C24400E2479B /* LaunchScreen.storyboard */,
@@ -389,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D3ED52D2816C24100E2479B /* ViewController.m in Sources */,
+				6D50633D2840C83400492186 /* ViewController+JMessageInputDelegate.m in Sources */,
 				6D3ED5272816C24100E2479B /* AppDelegate.m in Sources */,
 				6D3ED5382816C24400E2479B /* main.m in Sources */,
 				6D3ED52A2816C24100E2479B /* SceneDelegate.m in Sources */,

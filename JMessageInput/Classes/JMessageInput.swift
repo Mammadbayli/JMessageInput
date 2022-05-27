@@ -12,11 +12,17 @@
                 processState()
             }
             
-            self.delegate?.stateDidChange(input: self, oldState: oldValue)
+            if self.delegate?.stateDidChange != nil {
+                self.delegate?.stateDidChange!(input: self, oldState: oldValue)
+            }
+
         }
         
         willSet {
-            self.delegate?.stateWillChange(input: self, newState: newValue)
+            if self.delegate?.stateWillChange != nil {
+                self.delegate?.stateWillChange!(input: self, newState: newValue)
+            }
+
         }
     }
     
