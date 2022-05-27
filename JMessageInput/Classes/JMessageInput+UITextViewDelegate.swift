@@ -27,7 +27,7 @@ extension JMessageInput: UITextViewDelegate {
         
         resizeTextViewToFitText(textView: textView)
         
-        self.delegate?.inputDidChange(input: self, text: textView.text)
+        self.delegate?.textDidChange(input: self, text: textView.text)
     }
     
     func resizeTextViewToFitText(textView: UITextView) {

@@ -5,7 +5,7 @@
 //  Created by Javad on 29.03.22.
 //
 
-public enum JMessageInputState {
+@objc public enum JMessageInputState: Int {
     case initial
     case dirty
     case recordingAudio

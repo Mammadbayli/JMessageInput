@@ -5,9 +5,9 @@
 //  Created by Javad on 22.04.22.
 //
 
-public protocol JMessageInputDelegate: AnyObject {
+@objc public protocol JMessageInputDelegate: AnyObject {
     
-    func inputDidChange(input: JMessageInput, text: String?)
+    func textDidChange(input: JMessageInput, text: String?)
     func inputDidComeIntoFocus(input: JMessageInput)
     func inputDidFallOutOfFocus(input: JMessageInput)
     func inputDidChangeFrame(input: JMessageInput)
