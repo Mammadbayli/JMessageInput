@@ -9,7 +9,8 @@
 #import "ViewController+JMessageInputDelegate.h"
 
 @implementation ViewController (JMessageInputDelegate)
-- (void)inputDidChangeFrameWithInput:(JMessageInput *)input {
+
+- (void)inputDidChangeFrameWithInput:(JMessageInput *)input frame:(CGRect)frame {
     
 }
 
