@@ -29,7 +29,7 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         
         let location = touch.location(in: self)
         let distance = initialTouchLocation!.x - location.x
-        if (abs(distance) > 150 && isMicButtonPressed) {
+        if (abs(distance) > 150) {
             micButtonReleased(canceled: true)
         }
         
@@ -41,11 +41,11 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         
         guard let touchLocation = touches.first?.location(in: self) else { return }
         
-        if !micButton.frame.contains(touchLocation) && isMicButtonPressed {
+        if isMicButtonPressed {
             micButtonReleased(canceled: false)
-        } else if !plusButton.frame.contains(touchLocation) && isPlusButtonPressed {
+        } else if isPlusButtonPressed {
             plusButtonReleased()
-        } else if !cameraButton.frame.contains(touchLocation) && isCameraButtonPressed {
+        } else if isCameraButtonPressed {
             cameraButtonReleased()
         }
         
@@ -67,24 +67,26 @@ extension JMessageInput: UIGestureRecognizerDelegate {
     }
     
     func micButtonPressed() {
-        isMicButtonPressed = true
-        
-        state = .recordingAudio
-        if self.delegate?.micButtonPressed != nil {
-            self.delegate?.micButtonPressed!(input: self)
+        if !isMicButtonPressed {
+            isMicButtonPressed = true
+            
+            state = .recordingAudio
+            if self.delegate?.micButtonPressed != nil {
+                self.delegate?.micButtonPressed!(input: self)
+            }
         }
-
     }
     
     func micButtonReleased(canceled: Bool) {
-        isMicButtonPressed = false
-        
-        state = .initial
-        
-         if self.delegate?.micButtonPressed != nil {
-             self.delegate?.micButtonReleased!(input: self, canceled: canceled)
-         }
-    
+        if isMicButtonPressed {
+            isMicButtonPressed = false
+            
+            state = .initial
+            
+            if self.delegate?.micButtonPressed != nil {
+                self.delegate?.micButtonReleased!(input: self, canceled: canceled)
+            }
+        }
     }
 
      func plusButtonPressed() {
