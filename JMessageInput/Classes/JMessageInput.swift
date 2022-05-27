@@ -26,6 +26,17 @@
         }
     }
     
+    @objc public var text: String? {
+        get {
+            self.textView.text
+        }
+        
+        set(val) {
+            self.textView.text = val
+            self.textViewDidChange(self.textView)
+        }
+    }
+    
     var isPlusButtonPressed = false
     var isMicButtonPressed = false
     var isCameraButtonPressed = false
@@ -40,7 +51,7 @@
         addSubview(stackView)
         
         stackView.addArrangedSubview(plusButton)
-        stackView.addArrangedSubview(textField)
+        stackView.addArrangedSubview(textView)
         stackView.addArrangedSubview(recordingIndicatorImageView)
         stackView.addArrangedSubview(recordingDurationLabel)
         stackView.addArrangedSubview(cameraButton)
@@ -56,7 +67,7 @@
         ])
         
         if (textViewHeightConstraint == nil) {
-            textViewHeightConstraint = textField.heightAnchor.constraint(greaterThanOrEqualToConstant: minTextHeight)
+            textViewHeightConstraint = textView.heightAnchor.constraint(greaterThanOrEqualToConstant: minTextHeight)
         }
         
         NSLayoutConstraint.activate([
@@ -136,13 +147,13 @@
         return stackView
     }()
     
-    @objc public lazy var textField: JMessageInputTextView = {
-        let field = JMessageInputTextView()
+    @objc public lazy var textView: JMessageInputTextView = {
+        let view = JMessageInputTextView()
         
-        field.delegate = self
-        field.inputAccessoryView = nil
+        view.delegate = self
+        view.inputAccessoryView = nil
         
-        return field
+        return view
     }()
     
     lazy var sendButton: UIButton = {
