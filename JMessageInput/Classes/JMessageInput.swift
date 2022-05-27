@@ -1,15 +1,28 @@
 @objc public final class JMessageInput: UIView {
     
+    @objc public weak var delegate: JMessageInputDelegate?
+    
+    @objc public var maxTextHeight = 100.0
+    @objc public var minTextHeight = 35.0
+    
+    @objc public var animationDuration = 0.3
+    @objc public var state: JMessageInputState = .initial {
+        didSet {
+            if (oldValue != state) {
+                processState()
+            }
+            
+            self.delegate?.stateDidChange(input: self, oldState: oldValue)
+        }
+        
+        willSet {
+            self.delegate?.stateWillChange(input: self, newState: newValue)
+        }
+    }
+    
     var isPlusButtonPressed = false
     var isMicButtonPressed = false
     var isCameraButtonPressed = false
-    
-    weak var delegate: JMessageInputDelegate?
-    
-    let maxTextHeight:CGFloat = 100
-    let minTextHeight:CGFloat = 35
-    
-    let animationDuration:Double = 0.3
     
     var temporaryConstraints = [NSLayoutConstraint]()
     var textViewHeightConstraint: NSLayoutConstraint?
@@ -28,7 +41,7 @@
         stackView.addArrangedSubview(sendButton)
         stackView.addArrangedSubview(slideToCancelLabel)
         stackView.addArrangedSubview(micButton)
-
+        
         NSLayoutConstraint.activate([
             stackView.widthAnchor.constraint(equalTo: widthAnchor, constant: 0),
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -39,7 +52,7 @@
         if (textViewHeightConstraint == nil) {
             textViewHeightConstraint = textField.heightAnchor.constraint(greaterThanOrEqualToConstant: minTextHeight)
         }
-
+        
         NSLayoutConstraint.activate([
             textViewHeightConstraint!,
             recordingIndicatorImageView.heightAnchor.constraint(equalToConstant: minTextHeight),
@@ -62,7 +75,7 @@
         
         layoutForInitialState()
     }
-
+    
     
     func animateRedMic() {
         shouldAnimateRedMic = true
@@ -72,26 +85,12 @@
             if (self.shouldAnimateRedMic) {
                 self.animateRedMic()
             }
-
+            
         }
     }
     
     func stopAnimatingRedMic() {
         shouldAnimateRedMic = false
-    }
-    
-    var state: JMessageInputState = .initial {
-        didSet {
-            if (oldValue != state) {
-                processState()
-            }
-            
-            self.delegate?.stateDidChange(input: self, oldState: oldValue)
-        }
-        
-        willSet {
-            self.delegate?.stateWillChange(input: self, newState: newValue)
-        }
     }
     
     lazy var slideToCancelLabel: UILabel = {
@@ -135,7 +134,7 @@
         let field = JMessageInputTextView()
         
         field.delegate = self
-    
+        
         
         return field
     }()
@@ -146,7 +145,7 @@
         
         if #available(iOS 13.0, *) {
             button.setImage(UIImage(systemName: "paperplane.fill"), for: .normal)
-
+            
         } else {
             // Fallback on earlier versions
         }
@@ -154,18 +153,18 @@
         button.addTarget(self, action: #selector(sendButtonPressed), for: .touchDown)
         button.addTarget(self, action: #selector(sendButtonReleased), for: .touchCancel)
         button.addTarget(self, action: #selector(sendButtonReleased), for: .touchUpInside)
-
+        
         return button
     }()
     
     lazy var plusButton: UIButton = {
         let button = UIButton()
         
-//                    button.contentHorizontalAlignment = .left
+        //                    button.contentHorizontalAlignment = .left
         if #available(iOS 13.0, *) {
             button.setImage(UIImage(systemName: "plus"), for: .normal)
-//            button.contentHorizontalAlignment = .fill
-//            button.contentVerticalAlignment = .fill
+            //            button.contentHorizontalAlignment = .fill
+            //            button.contentVerticalAlignment = .fill
         } else {
             // Fallback on earlier versions
         }
@@ -193,8 +192,8 @@
         let button = UIButton()
         if #available(iOS 13.0, *) {
             button.setImage(UIImage(systemName: "camera"), for: .normal)
-//            button.contentHorizontalAlignment = .fill
-//            button.contentVerticalAlignment = .fill
+            //            button.contentHorizontalAlignment = .fill
+            //            button.contentVerticalAlignment = .fill
         } else {
             // Fallback on earlier versions
         }
@@ -205,7 +204,7 @@
     }()
     
     @objc public convenience init() {
-//        let frame = CGRect(origin: .zero, size: .init(width: 200, height: 40))
+        //        let frame = CGRect(origin: .zero, size: .init(width: 200, height: 40))
         self.init(frame: .zero)
     }
     
@@ -220,7 +219,7 @@
         let recognizer = UITapGestureRecognizer()
         recognizer.delegate = self
         self.addGestureRecognizer(recognizer)
-      
+        
     }
     
     required init?(coder: NSCoder) {
