@@ -38,10 +38,16 @@ extension JMessageInput: UITextViewDelegate {
         let newHeight = max(min(expectedSize.height, self.maxTextHeight), self.minTextHeight)
 
         if Double(self.textViewHeightConstraint?.constant ?? 0) != newHeight {
+            
+            let newFrame = CGRect(origin: self.frame.origin, size: CGSize(width: self.frame.size.width, height: newHeight))
+            
+            if self.delegate?.inputWillChangeFrame != nil {
+                self.delegate?.inputWillChangeFrame!(input: self, frame: newFrame)
+            }
+            
             self.textViewHeightConstraint?.constant = newHeight
             
             textView.isScrollEnabled = expectedSize.height > self.maxTextHeight
-            
             
             if self.delegate?.inputDidChangeFrame != nil {
                 self.delegate?.inputDidChangeFrame!(input: self, frame: self.frame)

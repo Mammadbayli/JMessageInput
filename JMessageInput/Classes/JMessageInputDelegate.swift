@@ -10,6 +10,8 @@
     @objc optional func textDidChange(input: JMessageInput, text: String?)
     @objc optional func inputDidComeIntoFocus(input: JMessageInput)
     @objc optional func inputDidFallOutOfFocus(input: JMessageInput)
+    
+    @objc optional func inputWillChangeFrame(input: JMessageInput, frame: CGRect)
     @objc optional func inputDidChangeFrame(input: JMessageInput, frame: CGRect)
     
     

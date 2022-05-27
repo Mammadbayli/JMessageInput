@@ -14,6 +14,10 @@
     
 }
 
+- (void)inputWillChangeFrameWithInput:(JMessageInput *)input frame:(CGRect)frame {
+    
+}
+
 - (void)inputDidComeIntoFocusWithInput:(JMessageInput *)input {
     
 }
