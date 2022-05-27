@@ -47,7 +47,7 @@ extension JMessageInput: UITextViewDelegate {
             
             self.textViewHeightConstraint?.constant = newHeight
             
-            textView.isScrollEnabled = expectedSize.height > self.maxTextHeight
+            textView.isScrollEnabled = expectedSize.height >= self.maxTextHeight
             
             if self.delegate?.inputDidChangeFrame != nil {
                 self.delegate?.inputDidChangeFrame!(input: self, frame: self.frame)
