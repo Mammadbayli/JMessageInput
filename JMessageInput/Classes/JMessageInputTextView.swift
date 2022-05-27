@@ -5,7 +5,7 @@
 //  Created by Javad on 29.03.22.
 //
 
-class JMessageInputTextView: UITextView {
+@objc public class JMessageInputTextView: UITextView {
     
     init() {
         super.init(frame: .zero, textContainer: nil)
