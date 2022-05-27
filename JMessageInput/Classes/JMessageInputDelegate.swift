@@ -19,7 +19,7 @@
     @objc optional func plusButtonReleased(input: JMessageInput)
     
     @objc optional func micButtonPressed(input: JMessageInput)
-    @objc optional func micButtonReleased(input: JMessageInput)
+    @objc optional func micButtonReleased(input: JMessageInput, canceled: Bool)
     
     @objc optional func cameraButtonPressed(input: JMessageInput)
     @objc optional func cameraButtonReleased(input: JMessageInput)
