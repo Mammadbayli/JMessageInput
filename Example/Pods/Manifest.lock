@@ -1,5 +1,5 @@
 PODS:
-  - JMessageInput (0.1.2)
+  - JMessageInput (0.1.3)
 
 DEPENDENCIES:
   - JMessageInput (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JMessageInput: 9bb9e6a81c3e9522907d57ea79184c470a0287f7
+  JMessageInput: c516ca5ae8f21c1a6e004b121cbb256a9d91e58c
 
 PODFILE CHECKSUM: 8d18769f6c3d312ad16239988ec39d1fc591b1a4
 
