@@ -106,9 +106,9 @@
         return label
     }()
     
-    lazy var recordingDurationLabel: UILabel = {
+    @objc public lazy var recordingDurationLabel: UILabel = {
         let label = UILabel()
-        label.text = "0:12"
+        label.text = "0:00"
         return label
     }()
     
@@ -136,11 +136,11 @@
         return stackView
     }()
     
-    lazy var textField: JMessageInputTextView = {
+    @objc public lazy var textField: JMessageInputTextView = {
         let field = JMessageInputTextView()
         
         field.delegate = self
-        
+        field.inputAccessoryView = nil
         
         return field
     }()
