@@ -6,17 +6,15 @@
 //
 
 extension JMessageInput: UITextViewDelegate {
-//    public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-//        if (text == "\n") {
-//            textView.endEditing(true)
-//            textView.text = nil
-////            state = .initial
-//            
-//            resizeTextViewToFitText(textView: textView)
-//        }
-//        
-//        return true
-//    }
+
+    public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        guard textView.text.replacingOccurrences(of: " ", with: "").count > 0 else {
+            return text != "\n"
+        }
+        
+        return true
+    }
+    
     
     public func textViewDidBeginEditing(_ textView: UITextView) {
         if self.delegate?.inputDidBeginEditing != nil {
