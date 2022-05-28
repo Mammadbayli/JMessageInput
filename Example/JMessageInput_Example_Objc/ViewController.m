@@ -20,7 +20,7 @@
     if (!_input) {
         _input = [[JMessageInput alloc] init];
         [_input setDelegate:self];
-        [_input setState:JMessageInputStateDirty];
+//        [_input setState:JMessageInputStateDirty];
     }
     
     return _input;

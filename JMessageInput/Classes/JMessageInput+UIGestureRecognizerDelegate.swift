@@ -133,7 +133,7 @@ extension JMessageInput: UIGestureRecognizerDelegate {
     }
     
      func cameraButtonReleased() {
-         if isPlusButtonPressed {
+         if isCameraButtonPressed {
              isCameraButtonPressed = false
              
              if self.delegate?.cameraButtonReleased != nil {
