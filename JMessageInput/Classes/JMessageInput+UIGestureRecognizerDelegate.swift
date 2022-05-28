@@ -14,15 +14,22 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         
         initialTouchLocation = touchLocation
         
-        if sendButton.frame.contains(touchLocation) {
-            sendButtonPressed()
-        } else if micButton.frame.contains(touchLocation) {
-            micButtonPressed()
-        } else if plusButton.frame.contains(touchLocation) {
-            plusButtonPressed()
-        } else if cameraButton.frame.contains(touchLocation) {
-            cameraButtonPressed()
+        if state == .dirty {
+            if sendButton.frame.contains(touchLocation) {
+                sendButtonPressed()
+            } else if plusButton.frame.contains(touchLocation) {
+                plusButtonPressed()
+            }
+        } else if state == .initial {
+            if micButton.frame.contains(touchLocation) {
+                micButtonPressed()
+            }  else if cameraButton.frame.contains(touchLocation) {
+                cameraButtonPressed()
+            } else if plusButton.frame.contains(touchLocation) {
+                plusButtonPressed()
+            }
         }
+     
     }
     
     public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -94,40 +101,45 @@ extension JMessageInput: UIGestureRecognizerDelegate {
     }
 
      func plusButtonPressed() {
-        isPlusButtonPressed = true
-        
-         if self.delegate?.plusButtonPressed != nil {
-             self.delegate?.plusButtonPressed!(input: self)
+         if !isPlusButtonPressed {
+             isPlusButtonPressed = true
+             
+             if self.delegate?.plusButtonPressed != nil {
+                 self.delegate?.plusButtonPressed!(input: self)
+             }
          }
-
     }
     
      func plusButtonReleased() {
-        isPlusButtonPressed = false
-        
-         if self.delegate?.plusButtonReleased != nil {
-             self.delegate?.plusButtonReleased!(input: self)
+         if isPlusButtonPressed {
+             isPlusButtonPressed = false
+             
+             if self.delegate?.plusButtonReleased != nil {
+                 self.delegate?.plusButtonReleased!(input: self)
+             }
          }
-
    }
     
     
      func cameraButtonPressed() {
-        isCameraButtonPressed = true
-        
-         if self.delegate?.cameraButtonPressed != nil {
-             self.delegate?.cameraButtonPressed!(input: self)
+         if !isCameraButtonPressed {
+             isCameraButtonPressed = true
+             
+             if self.delegate?.cameraButtonPressed != nil {
+                 self.delegate?.cameraButtonPressed!(input: self)
+             }
          }
 
     }
     
      func cameraButtonReleased() {
-        isCameraButtonPressed = false
-        
-         if self.delegate?.cameraButtonReleased != nil {
-             self.delegate?.cameraButtonReleased!(input: self)
+         if isPlusButtonPressed {
+             isCameraButtonPressed = false
+             
+             if self.delegate?.cameraButtonReleased != nil {
+                 self.delegate?.cameraButtonReleased!(input: self)
+             }
          }
-
     }
     
     func sendButtonPressed() {
@@ -148,6 +160,13 @@ extension JMessageInput: UIGestureRecognizerDelegate {
                 self.delegate?.sendButtonReleased!(input: self)
             }
         }
+    }
+    
+    func resetAllButtons() {
+        isSendButtonPressed = false
+        isCameraButtonPressed = false
+        isMicButtonPressed = false
+        isPlusButtonPressed = false
     }
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive event: UIEvent) -> Bool {
