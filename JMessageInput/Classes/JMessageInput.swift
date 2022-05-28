@@ -40,6 +40,7 @@
     var isPlusButtonPressed = false
     var isMicButtonPressed = false
     var isCameraButtonPressed = false
+    var isSendButtonPressed = false
     
     var temporaryConstraints = [NSLayoutConstraint]()
     var textViewHeightConstraint: NSLayoutConstraint?
@@ -156,7 +157,7 @@
         return view
     }()
     
-    lazy var sendButton: UIButton = {
+    @objc public lazy var sendButton: UIButton = {
         let button = UIButton()
         button.isHidden = true
         
@@ -167,14 +168,12 @@
             // Fallback on earlier versions
         }
         
-        button.addTarget(self, action: #selector(sendButtonPressed), for: .touchDown)
-        button.addTarget(self, action: #selector(sendButtonReleased), for: .touchCancel)
-        button.addTarget(self, action: #selector(sendButtonReleased), for: .touchUpInside)
+        button.isUserInteractionEnabled = false
         
         return button
     }()
     
-    lazy var plusButton: UIButton = {
+    @objc public lazy var plusButton: UIButton = {
         let button = UIButton()
         
         //                    button.contentHorizontalAlignment = .left
@@ -192,7 +191,7 @@
     }()
     
     
-    lazy var micButton: UIButton = {
+    @objc public lazy var micButton: UIButton = {
         let button = UIButton()
         if #available(iOS 13.0, *) {
             button.setImage(UIImage(systemName: "mic"), for: .normal)
@@ -205,7 +204,7 @@
         return button
     }()
     
-    lazy var cameraButton: UIButton = {
+    @objc public lazy var cameraButton: UIButton = {
         let button = UIButton()
         if #available(iOS 13.0, *) {
             button.setImage(UIImage(systemName: "camera"), for: .normal)
