@@ -141,7 +141,7 @@ extension JMessageInput: UIGestureRecognizerDelegate {
     }
     
     func sendButtonReleased() {
-        if !isSendButtonPressed {
+        if isSendButtonPressed {
             isSendButtonPressed = false
             
             if self.delegate?.sendButtonReleased != nil {
