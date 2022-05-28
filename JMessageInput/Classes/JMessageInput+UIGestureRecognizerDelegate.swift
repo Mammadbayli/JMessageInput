@@ -175,6 +175,10 @@ extension JMessageInput: UIGestureRecognizerDelegate {
             return false
         }
         
+        guard gestureRecognizerToFail.isKind(of: type(of: otherGestureRecognizer)) else {
+            return false
+        }
+        
         return true
     }
 
