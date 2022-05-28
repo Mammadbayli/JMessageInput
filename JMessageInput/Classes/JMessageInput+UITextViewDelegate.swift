@@ -18,14 +18,22 @@ extension JMessageInput: UITextViewDelegate {
 //        return true
 //    }
     
+    public func textViewDidBeginEditing(_ textView: UITextView) {
+        if self.delegate?.inputDidBeginEditing != nil {
+            self.delegate?.inputDidBeginEditing!(input: self)
+        }
+
+    }
+    
+    public func textViewDidEndEditing(_ textView: UITextView) {
+        if self.delegate?.inputDidEndEditing != nil {
+            self.delegate?.inputDidEndEditing!(input: self)
+        }
+    }
+    
     public func textViewDidChange(_ textView: UITextView) {
-//        if let text = textView.text, text.count > 0 {
-//            state = .dirty
-//        } else {
-//            state = .initial
-//        }
-        
         resizeTextViewToFitText(textView: textView)
+        
         if self.delegate?.textDidChange != nil {
             self.delegate?.textDidChange!(input: self, text: textView.text)
         }

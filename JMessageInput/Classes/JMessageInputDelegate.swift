@@ -11,9 +11,11 @@
     @objc optional func inputDidComeIntoFocus(input: JMessageInput)
     @objc optional func inputDidFallOutOfFocus(input: JMessageInput)
     
+    @objc optional func inputDidBeginEditing(input: JMessageInput)
+    @objc optional func inputDidEndEditing(input: JMessageInput)
+    
     @objc optional func inputWillChangeFrame(input: JMessageInput, frame: CGRect)
     @objc optional func inputDidChangeFrame(input: JMessageInput, frame: CGRect)
-    
     
     @objc optional func plusButtonPressed(input: JMessageInput)
     @objc optional func plusButtonReleased(input: JMessageInput)
