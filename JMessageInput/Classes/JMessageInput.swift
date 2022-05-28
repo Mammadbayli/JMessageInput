@@ -3,7 +3,7 @@
     @objc public weak var delegate: JMessageInputDelegate?
     
     @objc public var gestureRecognizer = UITapGestureRecognizer()
-    @objc public weak var gestureRecognizerToFail: UITapGestureRecognizer?
+    @objc public weak var gestureRecognizerToFail: UIGestureRecognizer?
     
     @objc public var maxTextHeight = 100.0
     @objc public var minTextHeight = 35.0
