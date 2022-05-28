@@ -2,6 +2,9 @@
     
     @objc public weak var delegate: JMessageInputDelegate?
     
+    @objc public var gestureRecognizer = UITapGestureRecognizer()
+    @objc public weak var gestureRecognizerToFail: UITapGestureRecognizer?
+    
     @objc public var maxTextHeight = 100.0
     @objc public var minTextHeight = 35.0
     
@@ -232,9 +235,8 @@
         
         setup()
         
-        let recognizer = UITapGestureRecognizer()
-        recognizer.delegate = self
-        self.addGestureRecognizer(recognizer)
+        gestureRecognizer.delegate = self
+        self.addGestureRecognizer(gestureRecognizer)
         
     }
     

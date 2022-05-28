@@ -162,18 +162,19 @@ extension JMessageInput: UIGestureRecognizerDelegate {
         }
     }
     
-    func resetAllButtons() {
-        isSendButtonPressed = false
-        isCameraButtonPressed = false
-        isMicButtonPressed = false
-        isPlusButtonPressed = false
-    }
-    
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive event: UIEvent) -> Bool {
         return true
     }
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        return true
+    }
+    
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        guard let gestureRecognizerToFail = self.gestureRecognizerToFail else {
+            return false
+        }
+        
         return true
     }
 
