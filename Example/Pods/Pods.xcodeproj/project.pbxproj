@@ -7,35 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EE0E80CEAD62CC90E447AE28A9F3ED7 /* JMessageInput+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC99F81515AA4B03251849F504DAFF4 /* JMessageInput+UIGestureRecognizerDelegate.swift */; };
-		2334B1F3CC46701DAB574C2F4CBBC1D0 /* UIView+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A98662E7F4AF657E80089496369A83 /* UIView+Visibility.swift */; };
+		0630CE1E38EC06FA26CAF56982F687AC /* JMessageInput-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E19F654C758A7CC8C271CF8C7C31A3C /* JMessageInput-dummy.m */; };
+		0BDD039BA5994FFB10E8DEE751DCF7B3 /* JMessageInput+StateHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEC6113EA5D768438AE22DC2444BA48 /* JMessageInput+StateHandling.swift */; };
+		173AC14F5CD9381806BB5E8AB81DA84A /* UIView+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108A899DF41FBA0C5943A043ACB8468 /* UIView+Visibility.swift */; };
+		1935AEF11AA1D40D80FDFDF2F2B25977 /* JMessageInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFD3A15F2B52FC170B3D16FB22C91E0 /* JMessageInputTextView.swift */; };
+		28EF04A716C3A85259FF095430DC84EF /* UIView+Disable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FC50AFA909C3A1D447DD3A024F08D /* UIView+Disable.swift */; };
 		2F25319EBC85B5614FE447BC669EBE97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		46D26BD7C7008069290B56EF50CFDCF3 /* JMessageInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5534FF5B13511F726784C208E53899 /* JMessageInputDelegate.swift */; };
+		60654DF2D921771294858E1C9DC6FF0A /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0591298119DD24E8E98126591B5D97 /* UIView+Shimmer.swift */; };
 		6957F2358C219660AF0D39372B736BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7EE7C0390D91A7204EDAFF49FD5D0BAF /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF060BF6F7153C61C2D81ACC83FB63FB /* UIView+Shimmer.swift */; };
-		81328DC2395F05F71764856589ACA825 /* JMessageInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2937ED834AD2B52A52DF42E0B58F785D /* JMessageInput.swift */; };
-		8DD7026AFCAA971EC3B98C243F83A6B2 /* JMessageInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16AC4146A5F9A64A6E8B1FF5FE09622 /* JMessageInputState.swift */; };
-		9F60960878A99D8669CA1AB7232EC7A8 /* JMessageInput+StateHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086CE2BF690B593D3DEF8534147C63C /* JMessageInput+StateHandling.swift */; };
-		ABF9A2378CF7B44E13C324F18EA40AEE /* JMessageInput-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83693EBC414FC1CBF269D3BA24E87734 /* JMessageInput-dummy.m */; };
+		6F25E68774B7252E38D779BDB2B3231B /* JMessageInputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA12CA9B7660ECB49115CCA5E011AC4 /* JMessageInputState.swift */; };
+		7B207D6177CD636F8D74B8A9D8793DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		822F49036448FB857B5EF315683D8B32 /* JMessageInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450084705F64E42C14944AE8B1EF800C /* JMessageInputDelegate.swift */; };
+		AA877FAD94487BB25FCBD3519E407721 /* JMessageInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39C0D9FBD09E672B9186B1C80A9DA7 /* JMessageInput.swift */; };
 		AC64F8BBF20B01AF9B683D6BF30F4565 /* Pods-JMessageInput_Example_Objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADF32AC4D6ECB7BB1D7F3F87B4DE83B /* Pods-JMessageInput_Example_Objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9989BEB13B44B2AC11EA096F34FE882 /* Pods-JMessageInput_Example_Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280734DEEDDE9F543AC2CC48E566413 /* Pods-JMessageInput_Example_Objc-dummy.m */; };
-		D2254176F2406ADE2043EDCDB50870A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D5A4240076455B7CE01C0F5B4D174DB1 /* Pods-JMessageInput_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 118EAA9A0A508D34C8C316AC45AAEB66 /* Pods-JMessageInput_Example-dummy.m */; };
-		DD0AE22D433B834875DA381A0BBD4C59 /* JMessageInput+UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FCEF85E237C09CCCF83CB7EA5CECE7 /* JMessageInput+UITextViewDelegate.swift */; };
-		E90191362C1FB230BB1023D32D30BDD4 /* JMessageInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B30BCFB93172A836C82C39A059B8EA8 /* JMessageInputTextView.swift */; };
+		DD7AB0B53913DA7C6899023AE5AC2DB0 /* JMessageInput-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A447E529249B78B7EF282887749E8676 /* JMessageInput-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E78E602B64708ADDD5133FC1E77ECEAC /* JMessageInput+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C328B5780BF254977D63AC11650547C /* JMessageInput+UIGestureRecognizerDelegate.swift */; };
 		EE98454FBAFBC3FC16570C0B984B995B /* Pods-JMessageInput_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A65FF89B4FFAFF030FA0AA09EB8AA434 /* Pods-JMessageInput_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F09D25FF52EB41CFCD88BA8511BFA16D /* JMessageInput-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11441B8D795378326B6679A1DD145CA9 /* JMessageInput-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F360F08D6EE4442072722D9D7A70E4FE /* JMessageInput+UITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DE346CB593F2160015459F4F935C0A /* JMessageInput+UITextViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C6AD4BEDC1DE492E73AC7FB38EB6B2EA /* PBXContainerItemProxy */ = {
+		1BD0E156CF8EFF3BD371481C30814145 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6603DA9D25081132509411FA42F4743F;
 			remoteInfo = JMessageInput;
 		};
-		D20C9369C5721B16C79568298ADCB31A /* PBXContainerItemProxy */ = {
+		E91CB4B4BC02E724DBFC4E88C67E0940 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -45,64 +46,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0086CE2BF690B593D3DEF8534147C63C /* JMessageInput+StateHandling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JMessageInput+StateHandling.swift"; path = "JMessageInput/Classes/JMessageInput+StateHandling.swift"; sourceTree = "<group>"; };
+		00279FE940E4B126E102B3836BD7CB70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		0B066BF48276D09B12C832C09B165883 /* Pods-JMessageInput_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMessageInput_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0D500C6A149DED7D3961642B775CEAB0 /* JMessageInput.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JMessageInput.modulemap; sourceTree = "<group>"; };
 		0D88725BA6DD4C6BDE0B5651FAC3A5D7 /* Pods-JMessageInput_Example_Objc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMessageInput_Example_Objc-acknowledgements.plist"; sourceTree = "<group>"; };
-		0F71FAEF97CCE3ACFBADE0A451E7471A /* JMessageInput-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JMessageInput-Info.plist"; sourceTree = "<group>"; };
-		11441B8D795378326B6679A1DD145CA9 /* JMessageInput-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMessageInput-umbrella.h"; sourceTree = "<group>"; };
 		118EAA9A0A508D34C8C316AC45AAEB66 /* Pods-JMessageInput_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMessageInput_Example-dummy.m"; sourceTree = "<group>"; };
-		1B6F29F55AC283E13B991CCF5A28B543 /* JMessageInput.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JMessageInput.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1C16C80943FA4DC657722C323324CBB0 /* JMessageInput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMessageInput.release.xcconfig; sourceTree = "<group>"; };
+		1C08A84BEF1347C95EBC72006FBCBC49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1C328B5780BF254977D63AC11650547C /* JMessageInput+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JMessageInput+UIGestureRecognizerDelegate.swift"; path = "JMessageInput/Classes/JMessageInput+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
 		1C614D179B521F8F8C14E4B8F9F98473 /* Pods-JMessageInput_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JMessageInput_Example-frameworks.sh"; sourceTree = "<group>"; };
-		222FFA380B93625EA84BC7095F5351F7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		2280734DEEDDE9F543AC2CC48E566413 /* Pods-JMessageInput_Example_Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JMessageInput_Example_Objc-dummy.m"; sourceTree = "<group>"; };
-		24A8EBF761AB31C090B6D424D4D2DBA2 /* JMessageInput-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMessageInput-prefix.pch"; sourceTree = "<group>"; };
 		274A56E2275CE51FDC7E97997B664118 /* Pods-JMessageInput_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JMessageInput_Example"; path = Pods_JMessageInput_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2937ED834AD2B52A52DF42E0B58F785D /* JMessageInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInput.swift; path = JMessageInput/Classes/JMessageInput.swift; sourceTree = "<group>"; };
 		3155CBF14433CB417EA1685729C2868D /* Pods-JMessageInput_Example_Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMessageInput_Example_Objc.debug.xcconfig"; sourceTree = "<group>"; };
+		36DE346CB593F2160015459F4F935C0A /* JMessageInput+UITextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JMessageInput+UITextViewDelegate.swift"; path = "JMessageInput/Classes/JMessageInput+UITextViewDelegate.swift"; sourceTree = "<group>"; };
 		370DE3FD3D03376FC27743668F735CE5 /* Pods-JMessageInput_Example_Objc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JMessageInput_Example_Objc-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3DC99F81515AA4B03251849F504DAFF4 /* JMessageInput+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JMessageInput+UIGestureRecognizerDelegate.swift"; path = "JMessageInput/Classes/JMessageInput+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		3E4B3621D4F88AA25100DFA53E593F16 /* JMessageInput.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JMessageInput.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		450084705F64E42C14944AE8B1EF800C /* JMessageInputDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputDelegate.swift; path = JMessageInput/Classes/JMessageInputDelegate.swift; sourceTree = "<group>"; };
 		4ADF32AC4D6ECB7BB1D7F3F87B4DE83B /* Pods-JMessageInput_Example_Objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JMessageInput_Example_Objc-umbrella.h"; sourceTree = "<group>"; };
-		59A98662E7F4AF657E80089496369A83 /* UIView+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Visibility.swift"; sourceTree = "<group>"; };
-		5D5534FF5B13511F726784C208E53899 /* JMessageInputDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputDelegate.swift; path = JMessageInput/Classes/JMessageInputDelegate.swift; sourceTree = "<group>"; };
+		4E19F654C758A7CC8C271CF8C7C31A3C /* JMessageInput-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JMessageInput-dummy.m"; sourceTree = "<group>"; };
+		5BEC6113EA5D768438AE22DC2444BA48 /* JMessageInput+StateHandling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JMessageInput+StateHandling.swift"; path = "JMessageInput/Classes/JMessageInput+StateHandling.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76FCEF85E237C09CCCF83CB7EA5CECE7 /* JMessageInput+UITextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JMessageInput+UITextViewDelegate.swift"; path = "JMessageInput/Classes/JMessageInput+UITextViewDelegate.swift"; sourceTree = "<group>"; };
-		83693EBC414FC1CBF269D3BA24E87734 /* JMessageInput-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JMessageInput-dummy.m"; sourceTree = "<group>"; };
-		8B30BCFB93172A836C82C39A059B8EA8 /* JMessageInputTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputTextView.swift; path = JMessageInput/Classes/JMessageInputTextView.swift; sourceTree = "<group>"; };
+		7FA12CA9B7660ECB49115CCA5E011AC4 /* JMessageInputState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputState.swift; path = JMessageInput/Classes/JMessageInputState.swift; sourceTree = "<group>"; };
+		843FC50AFA909C3A1D447DD3A024F08D /* UIView+Disable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Disable.swift"; path = "JMessageInput/Classes/UIView+Disable.swift"; sourceTree = "<group>"; };
+		8A39C0D9FBD09E672B9186B1C80A9DA7 /* JMessageInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInput.swift; path = JMessageInput/Classes/JMessageInput.swift; sourceTree = "<group>"; };
 		8F17AC06904D1316BC162E5BBCCB2D43 /* Pods-JMessageInput_Example_Objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JMessageInput_Example_Objc.modulemap"; sourceTree = "<group>"; };
 		9686F920BDC469F6394341B195EEFFA1 /* Pods-JMessageInput_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JMessageInput_Example.modulemap"; sourceTree = "<group>"; };
 		9720A4E6A00DE76114D308C9722D0DEC /* Pods-JMessageInput_Example_Objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMessageInput_Example_Objc-Info.plist"; sourceTree = "<group>"; };
 		9C50EAF5F1E95CC1F21B44896235BB19 /* Pods-JMessageInput_Example_Objc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JMessageInput_Example_Objc-frameworks.sh"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EE3A31DF6949594BDFEC951306C6475 /* JMessageInput-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JMessageInput-Info.plist"; sourceTree = "<group>"; };
+		A447E529249B78B7EF282887749E8676 /* JMessageInput-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMessageInput-umbrella.h"; sourceTree = "<group>"; };
 		A65FF89B4FFAFF030FA0AA09EB8AA434 /* Pods-JMessageInput_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JMessageInput_Example-umbrella.h"; sourceTree = "<group>"; };
 		AD54867F2D4E0B3456FCFD04AC71C347 /* Pods-JMessageInput_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMessageInput_Example-Info.plist"; sourceTree = "<group>"; };
+		B108A899DF41FBA0C5943A043ACB8468 /* UIView+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Visibility.swift"; sourceTree = "<group>"; };
 		B8A0D52281E1C51FDF41321F15FACDC1 /* Pods-JMessageInput_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JMessageInput_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C441C9350666E880E5076018FDC40FCA /* Pods-JMessageInput_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMessageInput_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CC306DF4B1752BC626DCDD4B1148A7E1 /* JMessageInput.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMessageInput.debug.xcconfig; sourceTree = "<group>"; };
-		CF060BF6F7153C61C2D81ACC83FB63FB /* UIView+Shimmer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
+		C82A1BD03D00E3924C88F10A89B101B0 /* JMessageInput.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JMessageInput.modulemap; sourceTree = "<group>"; };
+		CAC448A3A25A885F4943B4D24EE60775 /* JMessageInput.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMessageInput.debug.xcconfig; sourceTree = "<group>"; };
+		CF0591298119DD24E8E98126591B5D97 /* UIView+Shimmer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
+		CFFD3A15F2B52FC170B3D16FB22C91E0 /* JMessageInputTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputTextView.swift; path = JMessageInput/Classes/JMessageInputTextView.swift; sourceTree = "<group>"; };
 		D6497FF53104F0C9ACB1C3B0C5430A1F /* Pods-JMessageInput_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JMessageInput_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E500BC038DE926F26F65D2DF4F3187FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DEE2ABB7E58A00EECE2A085C0E7C2A0E /* JMessageInput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JMessageInput.release.xcconfig; sourceTree = "<group>"; };
+		E4660AAE1877AB7C44CFFAAA890C5F41 /* JMessageInput-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JMessageInput-prefix.pch"; sourceTree = "<group>"; };
 		EEC9CBD4594509F38AAB2D816F3A7A47 /* Pods-JMessageInput_Example_Objc */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JMessageInput_Example_Objc"; path = Pods_JMessageInput_Example_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F16AC4146A5F9A64A6E8B1FF5FE09622 /* JMessageInputState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JMessageInputState.swift; path = JMessageInput/Classes/JMessageInputState.swift; sourceTree = "<group>"; };
 		F285782FD2055AD68B3A667B1C10B934 /* Pods-JMessageInput_Example_Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JMessageInput_Example_Objc.release.xcconfig"; sourceTree = "<group>"; };
 		F6B67F286189F558AD9289DE68DFDD33 /* JMessageInput */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JMessageInput; path = JMessageInput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		08C56D1943AB639944949CDEBC94B98E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B207D6177CD636F8D74B8A9D8793DE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F21623C04FDEFBA9B767121C39C9C2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2F25319EBC85B5614FE447BC669EBE97 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		959AC58966C08410E64ED1F004C1D320 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2254176F2406ADE2043EDCDB50870A1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,29 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E387951B5AFD5A0D986CC58B958B6DB /* Support Files */ = {
+		484EC31BD0871F1604FECB8999893CAE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0D500C6A149DED7D3961642B775CEAB0 /* JMessageInput.modulemap */,
-				83693EBC414FC1CBF269D3BA24E87734 /* JMessageInput-dummy.m */,
-				0F71FAEF97CCE3ACFBADE0A451E7471A /* JMessageInput-Info.plist */,
-				24A8EBF761AB31C090B6D424D4D2DBA2 /* JMessageInput-prefix.pch */,
-				11441B8D795378326B6679A1DD145CA9 /* JMessageInput-umbrella.h */,
-				CC306DF4B1752BC626DCDD4B1148A7E1 /* JMessageInput.debug.xcconfig */,
-				1C16C80943FA4DC657722C323324CBB0 /* JMessageInput.release.xcconfig */,
+				CF0591298119DD24E8E98126591B5D97 /* UIView+Shimmer.swift */,
+				B108A899DF41FBA0C5943A043ACB8468 /* UIView+Visibility.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JMessageInput";
-			sourceTree = "<group>";
-		};
-		35B46F272C038B76BF7975051A92E166 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				1B6F29F55AC283E13B991CCF5A28B543 /* JMessageInput.podspec */,
-				E500BC038DE926F26F65D2DF4F3187FA /* LICENSE */,
-				222FFA380B93625EA84BC7095F5351F7 /* README.md */,
-			);
-			name = Pod;
+			name = Utils;
+			path = JMessageInput/Classes/Utils;
 			sourceTree = "<group>";
 		};
 		5440C6C3BBF6CC32BB27CCE8C0ABF759 /* Pods-JMessageInput_Example */ = {
@@ -159,12 +146,35 @@
 			path = "Target Support Files/Pods-JMessageInput_Example";
 			sourceTree = "<group>";
 		};
+		56D341CE5520DED3B20DCE91264B5D3A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4ECD72DBE4A5454652C62FCA744144D /* JMessageInput */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DAAED3D3996DBF5B3F9C703B6177FC6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C82A1BD03D00E3924C88F10A89B101B0 /* JMessageInput.modulemap */,
+				4E19F654C758A7CC8C271CF8C7C31A3C /* JMessageInput-dummy.m */,
+				9EE3A31DF6949594BDFEC951306C6475 /* JMessageInput-Info.plist */,
+				E4660AAE1877AB7C44CFFAAA890C5F41 /* JMessageInput-prefix.pch */,
+				A447E529249B78B7EF282887749E8676 /* JMessageInput-umbrella.h */,
+				CAC448A3A25A885F4943B4D24EE60775 /* JMessageInput.debug.xcconfig */,
+				DEE2ABB7E58A00EECE2A085C0E7C2A0E /* JMessageInput.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JMessageInput";
 			sourceTree = "<group>";
 		};
 		81D56888DAF3E3B88E2147AC8C32A86F /* Products */ = {
@@ -177,22 +187,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C1CAADBEF7B5FE967239DD9777F8009 /* JMessageInput */ = {
+		B99625B96A7005878AF88E417C427539 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				2937ED834AD2B52A52DF42E0B58F785D /* JMessageInput.swift */,
-				0086CE2BF690B593D3DEF8534147C63C /* JMessageInput+StateHandling.swift */,
-				3DC99F81515AA4B03251849F504DAFF4 /* JMessageInput+UIGestureRecognizerDelegate.swift */,
-				76FCEF85E237C09CCCF83CB7EA5CECE7 /* JMessageInput+UITextViewDelegate.swift */,
-				5D5534FF5B13511F726784C208E53899 /* JMessageInputDelegate.swift */,
-				F16AC4146A5F9A64A6E8B1FF5FE09622 /* JMessageInputState.swift */,
-				8B30BCFB93172A836C82C39A059B8EA8 /* JMessageInputTextView.swift */,
-				35B46F272C038B76BF7975051A92E166 /* Pod */,
-				1E387951B5AFD5A0D986CC58B958B6DB /* Support Files */,
-				BD78CE6218204A7B1D4D0A194BFE14CF /* Utils */,
+				3E4B3621D4F88AA25100DFA53E593F16 /* JMessageInput.podspec */,
+				00279FE940E4B126E102B3836BD7CB70 /* LICENSE */,
+				1C08A84BEF1347C95EBC72006FBCBC49 /* README.md */,
 			);
-			name = JMessageInput;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		BC42E54B925D1CC3D424A8A36EF6F65E /* Targets Support Files */ = {
@@ -221,21 +223,11 @@
 			path = "Target Support Files/Pods-JMessageInput_Example_Objc";
 			sourceTree = "<group>";
 		};
-		BD78CE6218204A7B1D4D0A194BFE14CF /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				CF060BF6F7153C61C2D81ACC83FB63FB /* UIView+Shimmer.swift */,
-				59A98662E7F4AF657E80089496369A83 /* UIView+Visibility.swift */,
-			);
-			name = Utils;
-			path = JMessageInput/Classes/Utils;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				E119C374CB9DF4662603F92BCBE463B8 /* Development Pods */,
+				56D341CE5520DED3B20DCE91264B5D3A /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				81D56888DAF3E3B88E2147AC8C32A86F /* Products */,
 				BC42E54B925D1CC3D424A8A36EF6F65E /* Targets Support Files */,
@@ -250,12 +242,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E119C374CB9DF4662603F92BCBE463B8 /* Development Pods */ = {
+		D4ECD72DBE4A5454652C62FCA744144D /* JMessageInput */ = {
 			isa = PBXGroup;
 			children = (
-				9C1CAADBEF7B5FE967239DD9777F8009 /* JMessageInput */,
+				8A39C0D9FBD09E672B9186B1C80A9DA7 /* JMessageInput.swift */,
+				5BEC6113EA5D768438AE22DC2444BA48 /* JMessageInput+StateHandling.swift */,
+				1C328B5780BF254977D63AC11650547C /* JMessageInput+UIGestureRecognizerDelegate.swift */,
+				36DE346CB593F2160015459F4F935C0A /* JMessageInput+UITextViewDelegate.swift */,
+				450084705F64E42C14944AE8B1EF800C /* JMessageInputDelegate.swift */,
+				7FA12CA9B7660ECB49115CCA5E011AC4 /* JMessageInputState.swift */,
+				CFFD3A15F2B52FC170B3D16FB22C91E0 /* JMessageInputTextView.swift */,
+				843FC50AFA909C3A1D447DD3A024F08D /* UIView+Disable.swift */,
+				B99625B96A7005878AF88E417C427539 /* Pod */,
+				7DAAED3D3996DBF5B3F9C703B6177FC6 /* Support Files */,
+				484EC31BD0871F1604FECB8999893CAE /* Utils */,
 			);
-			name = "Development Pods";
+			name = JMessageInput;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,14 +272,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4637CCD8859AE6D207079177270F3A19 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F09D25FF52EB41CFCD88BA8511BFA16D /* JMessageInput-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		85010A29B55451114AFA76DD9D7719AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,17 +280,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2DE29B8031DBD328AE42742B737631D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7AB0B53913DA7C6899023AE5AC2DB0 /* JMessageInput-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6603DA9D25081132509411FA42F4743F /* JMessageInput */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F19809202A9100BA43496CEC6E900AB1 /* Build configuration list for PBXNativeTarget "JMessageInput" */;
+			buildConfigurationList = AEF28B74232D3FA734F2915507ADE39D /* Build configuration list for PBXNativeTarget "JMessageInput" */;
 			buildPhases = (
-				4637CCD8859AE6D207079177270F3A19 /* Headers */,
-				170136489996710D2A3C1C3347F3A66E /* Sources */,
-				959AC58966C08410E64ED1F004C1D320 /* Frameworks */,
-				EABD1C37C9907EDAFE8FA0E41291E966 /* Resources */,
+				B2DE29B8031DBD328AE42742B737631D /* Headers */,
+				8C1C92A48779B170B3ABDBF77E43463E /* Sources */,
+				08C56D1943AB639944949CDEBC94B98E /* Frameworks */,
+				C494144687A1F722F8D0ABC31729ABA3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -318,7 +321,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FB898BA1339B8AC9201CD06295EE222D /* PBXTargetDependency */,
+				DAB239A871FE8D03EFC47273EE7E3F31 /* PBXTargetDependency */,
 			);
 			name = "Pods-JMessageInput_Example_Objc";
 			productName = Pods_JMessageInput_Example_Objc;
@@ -337,7 +340,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				514C88CE948F2ABB1161E6E0882B9EE4 /* PBXTargetDependency */,
+				1A79B885E32E721D98EC553F337EAC85 /* PBXTargetDependency */,
 			);
 			name = "Pods-JMessageInput_Example";
 			productName = Pods_JMessageInput_Example;
@@ -350,8 +353,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -362,6 +365,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
 			productRefGroup = 81D56888DAF3E3B88E2147AC8C32A86F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EABD1C37C9907EDAFE8FA0E41291E966 /* Resources */ = {
+		C494144687A1F722F8D0ABC31729ABA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,23 +402,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		170136489996710D2A3C1C3347F3A66E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81328DC2395F05F71764856589ACA825 /* JMessageInput.swift in Sources */,
-				9F60960878A99D8669CA1AB7232EC7A8 /* JMessageInput+StateHandling.swift in Sources */,
-				1EE0E80CEAD62CC90E447AE28A9F3ED7 /* JMessageInput+UIGestureRecognizerDelegate.swift in Sources */,
-				DD0AE22D433B834875DA381A0BBD4C59 /* JMessageInput+UITextViewDelegate.swift in Sources */,
-				ABF9A2378CF7B44E13C324F18EA40AEE /* JMessageInput-dummy.m in Sources */,
-				46D26BD7C7008069290B56EF50CFDCF3 /* JMessageInputDelegate.swift in Sources */,
-				8DD7026AFCAA971EC3B98C243F83A6B2 /* JMessageInputState.swift in Sources */,
-				E90191362C1FB230BB1023D32D30BDD4 /* JMessageInputTextView.swift in Sources */,
-				7EE7C0390D91A7204EDAFF49FD5D0BAF /* UIView+Shimmer.swift in Sources */,
-				2334B1F3CC46701DAB574C2F4CBBC1D0 /* UIView+Visibility.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3FCEE8C58A7C7E4A9D7AD72EF60E1115 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,20 +418,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C1C92A48779B170B3ABDBF77E43463E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA877FAD94487BB25FCBD3519E407721 /* JMessageInput.swift in Sources */,
+				0BDD039BA5994FFB10E8DEE751DCF7B3 /* JMessageInput+StateHandling.swift in Sources */,
+				E78E602B64708ADDD5133FC1E77ECEAC /* JMessageInput+UIGestureRecognizerDelegate.swift in Sources */,
+				F360F08D6EE4442072722D9D7A70E4FE /* JMessageInput+UITextViewDelegate.swift in Sources */,
+				0630CE1E38EC06FA26CAF56982F687AC /* JMessageInput-dummy.m in Sources */,
+				822F49036448FB857B5EF315683D8B32 /* JMessageInputDelegate.swift in Sources */,
+				6F25E68774B7252E38D779BDB2B3231B /* JMessageInputState.swift in Sources */,
+				1935AEF11AA1D40D80FDFDF2F2B25977 /* JMessageInputTextView.swift in Sources */,
+				28EF04A716C3A85259FF095430DC84EF /* UIView+Disable.swift in Sources */,
+				60654DF2D921771294858E1C9DC6FF0A /* UIView+Shimmer.swift in Sources */,
+				173AC14F5CD9381806BB5E8AB81DA84A /* UIView+Visibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		514C88CE948F2ABB1161E6E0882B9EE4 /* PBXTargetDependency */ = {
+		1A79B885E32E721D98EC553F337EAC85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JMessageInput;
 			target = 6603DA9D25081132509411FA42F4743F /* JMessageInput */;
-			targetProxy = D20C9369C5721B16C79568298ADCB31A /* PBXContainerItemProxy */;
+			targetProxy = E91CB4B4BC02E724DBFC4E88C67E0940 /* PBXContainerItemProxy */;
 		};
-		FB898BA1339B8AC9201CD06295EE222D /* PBXTargetDependency */ = {
+		DAB239A871FE8D03EFC47273EE7E3F31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JMessageInput;
 			target = 6603DA9D25081132509411FA42F4743F /* JMessageInput */;
-			targetProxy = C6AD4BEDC1DE492E73AC7FB38EB6B2EA /* PBXContainerItemProxy */;
+			targetProxy = 1BD0E156CF8EFF3BD371481C30814145 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -547,6 +552,36 @@
 			};
 			name = Debug;
 		};
+		46D49DD3CBDDDB8CD81CF618DF69C09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC448A3A25A885F4943B4D24EE60775 /* JMessageInput.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JMessageInput/JMessageInput-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JMessageInput/JMessageInput-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JMessageInput/JMessageInput.modulemap";
+				PRODUCT_MODULE_NAME = JMessageInput;
+				PRODUCT_NAME = JMessageInput;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		749633F2B4CB0411DDE16C04F6DB3824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F285782FD2055AD68B3A667B1C10B934 /* Pods-JMessageInput_Example_Objc.release.xcconfig */;
@@ -580,9 +615,9 @@
 			};
 			name = Release;
 		};
-		AC29E3B0795D41731C4A9F4B16996E5A /* Release */ = {
+		ACD96FE1252F14A4878CFABAD00D14ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C16C80943FA4DC657722C323324CBB0 /* JMessageInput.release.xcconfig */;
+			baseConfigurationReference = DEE2ABB7E58A00EECE2A085C0E7C2A0E /* JMessageInput.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -738,36 +773,6 @@
 			};
 			name = Release;
 		};
-		E0DA460C677E71E36DDD0F4D366BDC8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC306DF4B1752BC626DCDD4B1148A7E1 /* JMessageInput.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JMessageInput/JMessageInput-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JMessageInput/JMessageInput-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JMessageInput/JMessageInput.modulemap";
-				PRODUCT_MODULE_NAME = JMessageInput;
-				PRODUCT_NAME = JMessageInput;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -789,20 +794,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AEF28B74232D3FA734F2915507ADE39D /* Build configuration list for PBXNativeTarget "JMessageInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D49DD3CBDDDB8CD81CF618DF69C09F /* Debug */,
+				ACD96FE1252F14A4878CFABAD00D14ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E104E1328B302A53EA565C9C9B859D7C /* Build configuration list for PBXNativeTarget "Pods-JMessageInput_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B27E27D9B59E81F46FD557C2B8337B9B /* Debug */,
 				CE6860E41181F2844515245372BF1CB7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F19809202A9100BA43496CEC6E900AB1 /* Build configuration list for PBXNativeTarget "JMessageInput" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E0DA460C677E71E36DDD0F4D366BDC8F /* Debug */,
-				AC29E3B0795D41731C4A9F4B16996E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
