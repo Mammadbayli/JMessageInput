@@ -8,6 +8,7 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+<img src="https://github.com/user-attachments/assets/17b82d06-2d07-45de-b92d-7805cb0fd0c3" width="200" height="400" />
 
 ## Requirements
 
